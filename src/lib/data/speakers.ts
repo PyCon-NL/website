@@ -176,5 +176,33 @@ Through her one-woman consulting company OxyKodit, she develops tailored AI solu
 She's also passionate about open-source, having worked on various popular Python packages including FastAPI, Typer and spaCy.`,
         image: "/speakers/sofie_van_landeghem.jpg",
         years: [2025],
+    },
+    {
+        id: 13,
+        name: "Özge Çinko",
+        position: "AI Research Engineer",
+        company: "Huawei",
+        bio: `I'm Özge Çinko, a curious soul with a computer engineering degree and a heart full of ideas.
+
+I'm currently shaping the future as an AI Research Engineer at Huawei. I work in AI research, but I’m just as passionate about blending creativity with code.
+
+Whether it’s turning emotions into visuals, building fictional chatbots, or crafting data stories, I love making tech feel personal.
+
+I write, build, explore, and sometimes get beautifully lost in too many ideas, but always with Python by my side.`,
+        image: "/speakers/ozge_cinko.jpg",
+        years: [2025],
+    },
+    {
+        id: 14,
+        name: "Kader Miyanyedi",
+        position: "Backend Developer",
+        company: "BRANDDEFENCE",
+        bio: `I have been working as a backend developer for 4 years, primarily using Python and Django to build web applications and APIs.
+
+I enjoy sharing my knowledge by writing articles on Medium and other platforms, focusing on Python, Django best practices, performance optimization, and modern development techniques.
+
+Passionate about clean code and continuous learning, I aim to help the community by delivering clear and practical talks.`,
+        image: "/speakers/kader_miyanyedi.jpg",
+        years: [2025],
     }
 ];

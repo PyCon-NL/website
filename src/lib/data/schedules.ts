@@ -61,10 +61,17 @@ Let’s take your static typing skills to the next level - and become true typin
     {
         type: "talk",
         trackType: "single",
-        title: "TBD",
-        description: "TBD",
+        title: "How Shazam Identifies Songs in 5 Seconds: Audio Fingerprinting with Python",
+        description: `Have you ever wondered how Shazam identifies a song in just a few seconds, even in a noisy environment? In this talk, we’ll learn the core technology behind Shazam’s magic: audio fingerprinting.
+
+We'll explore how raw audio is processed with techniques like Fast Fourier Transform (FFT) to create spectrograms, how peak points are selected to form compact audio "fingerprints", and how those fingerprints can be stored and efficiently searched in a database. This process allows for accurate music recognition with minimal input.
+
+Through a step-by-step Python implementation, I’ll demonstrate how to build a simplified Shazam-like system using libraries such as librosa, numpy and scipy. You'll see how to extract fingerprints, build a mini database of tracks, and recognize an unknown audio snippet, all in code.
+
+This talk is ideal for developers interested in audio processing, real-world applications of signal processing, or reverse-engineering clever systems. No advanced math or audio background needed, just curiosity and love for music (and Python)!
+`,
         room: "Quest",
-        speakerId: -1,
+        speakerId: 13,
         timeSlot: "10:45",
         year: 2025,
         id: 3,
@@ -203,10 +210,15 @@ Whether you're an engineer relying on open source tools or someone curious about
     {
         type: "talk",
         trackType: "single",
-        title: "TBD",
-        description: "TBD",
+        title: "From Dictionaries to Decorators: A Practical Guide to Caching in Python",
+        description: `Caching is a simple but powerful way to make your Python code faster. It helps avoid repeating slow operations, like complex calculations or reading the same data again and again.
+
+In this talk, we will explore different ways to use caching in Python, starting from basic dictionary-based caching to Python’s built-in decorators like \`@lru_cache\`, \`@cache\`, and \`@cached_property\`. You will learn how each method works, when to use it, and what to watch out for.
+
+With easy-to-understand examples and real-world tips, this talk will help you improve the speed of your Python projects — without using any external tools or libraries.
+`,
         room: "Progress",
-        speakerId: -1,
+        speakerId: 14,
         timeSlot: "14:50",
         year: 2025,
         id: 11,
@@ -266,7 +278,12 @@ You’ll walk away with sharper debugging instincts, some practical tricks, and 
         type: "talk",
         trackType: "common",
         title: "How to not get fooled by your data while AI engineering",
-        description: "Description TBD",
+        description: `As AI becomes embedded in nearly every piece of software, user adoptation will ultimately depend on the accuracy and reliability of these applications. As with any Machine Learning (ML) system, a meaningful evaluation framework is crucial to avoid structural biases in your data or models.
+
+This talk identifies common pitfalls and illustrates them with real-world examples from nearly two decades of experience in the data science field. We explore the hidden story behind the metrics, moving beyond a single performance score to delve into the intricacies of the data set and its domain. We discuss how to detect artificial biases in your data and share strategies to prevent them through rigorous data collection and annotation practices.
+
+This talk will conclude with a list of practical recommendations for building ML projects on strong foundations, providing developers with the knowledge and tools they need to transform ambitious AI ideas into reliable, production-ready solutions.
+`,
         room: "Progress",
         speakerId: 12,
         timeSlot: "16:10",
