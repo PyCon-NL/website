@@ -196,7 +196,7 @@ I write, build, explore, and sometimes get beautifully lost in too many ideas, b
         id: 14,
         name: "Kader Miyanyedi",
         position: "Backend Developer",
-        company: "BRANDDEFENCE",
+        company: "BRANDEFENSE",
         bio: `I have been working as a backend developer for 4 years, primarily using Python and Django to build web applications and APIs.
 
 I enjoy sharing my knowledge by writing articles on Medium and other platforms, focusing on Python, Django best practices, performance optimization, and modern development techniques.
