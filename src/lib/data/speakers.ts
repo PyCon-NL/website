@@ -145,6 +145,7 @@ I also enjoy helping people and open-source projects improve their documentation
         name: "Sebastiaan Zeeff",
         position: "Principal Expert",
         company: "Sopra Steria",
+        image: "/speakers/sebastiaan_zeeff.jpg",
         bio: `Sebastiaan is a Python enthusiast who likes to think about good software design and engineering.
 
 He is a fellow of the EuroPython Society and the Python Software Foundation, works as a Principal Expert for the Pythoneers at Sopra Steria Netherlands, and frequently speaks at conferences around the world.`,
