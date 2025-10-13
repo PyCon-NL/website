@@ -12,6 +12,7 @@ export const speakers: Speaker[] = [
         id: 1,
         name: "William Lacerda",
         position: "Backend Developer",
+        company: "Polarsteps",
         bio: `William Lacerda is a seasoned backend developer with over 8 years of experience.
 
 While his primary expertise lies in TypeScript development, William has dedicated the past 3 years to mastering Python.`,
