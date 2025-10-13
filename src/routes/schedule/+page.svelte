@@ -2,11 +2,21 @@
 	import { schedule2025 } from "$lib/data/schedules";
 	import { rooms as allRooms, timeSlots as allTimeSlots, type Year } from "$lib/data/types";
 	import TimeSlot from "$lib/components/schedule/TimeSlot.svelte";
+	import Sponsors from "$lib/components/Sponsors.svelte";
 
 	const year: Year = 2025
 
 	const timeSlots = allTimeSlots[year]
 	const rooms = allRooms[year]
+
+	const today = new Date();
+	const target = new Date("2025-10-16");
+
+	const isConDay =
+		today.getFullYear() === target.getFullYear() &&
+		today.getMonth() === target.getMonth() &&
+		today.getDate() === target.getDate();
+
 </script>
 
 <div class="m-8 mt-20 py-6">
@@ -42,6 +52,14 @@
 			{/each}
 		</div>
 	</div>
+
+
+	{#if isConDay}
+		<div class="w-full flex flex-col items-center mt-16">
+			<div class="text-2xl px-4 text-center font-bold">Thanks again to our sponsors:</div>
+			<Sponsors small />
+		</div>
+	{/if}
 </div>
 
 <style>

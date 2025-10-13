@@ -1,0 +1,93 @@
+<script lang="ts">
+	import { groupBy } from "lodash-es";
+	import TagBlock from "$lib/components/core/TagBlock.svelte";
+
+    export let small: boolean = false;
+
+    type Tier = "gold" | "silver" | "bronze"
+
+    type Sponsor = {
+        tier: Tier
+        name: string
+        logo: string
+        url?: string
+    }
+
+    const colors: Record<Tier, "north" | "north2" | "north3"> = {
+        gold: "north",
+        silver: "north2",
+        bronze: "north3",
+    }
+
+    const sponsors: Sponsor[] = [
+        {
+            tier: "silver",
+            name: "Vakgroep Software Ontwikkeling",
+            logo: "/sponsors/vso.png",
+            url: "https://www.amsterdam.nl/bestuur-organisatie/organisatie/digitalisering-innovatie-en-informatie/",
+        },
+        {
+            tier: "gold",
+            name: "Sopra Steria",
+            logo: "/sponsors/ssg.jpg",
+            url: "https://www.soprasteria.nl",
+        },
+        {
+            tier: "silver",
+            name: "Qstars IT",
+            logo: "/sponsors/qstars.png",
+            url: "https://www.qstars.nl",
+        },
+        {
+            tier: "bronze",
+            name: "Four Digits",
+            logo: "/sponsors/fourdigits.png",
+            url: "https://www.fourdigits.nl/",
+        },
+        {
+            tier: "bronze",
+            name: "Channable",
+            logo: "/sponsors/channable.png",
+            url: "https://www.channable.com/",
+        },
+        {
+            tier: "silver",
+            name: "Red Hat",
+            logo: "/sponsors/redhat.png",
+            url: "https://www.redhat.com/",
+        }
+    ];
+
+    const byTier: Partial<Record<Tier, Sponsor[]>> = groupBy(sponsors, s => s.tier);
+    const tiers = new Set(sponsors.map(s => s.tier));
+    const sortedTiers: Tier[] = (["gold", "silver", "bronze"] as Tier[]).filter(t => tiers.has(t));
+</script>
+
+{#each sortedTiers as tier}
+    {@const tierSponsors = byTier[tier] ?? []}
+    <div class="w-full px-4 max-w-5xl {small ? 'mt-8' : 'mt-16'}">
+        <div class="w-full text-center text-2xl font-bold capitalize">
+            <TagBlock backgroundColor={colors[tier]} small={small} class="{small ? 'text-lg' : ''}">
+                {tier}
+            </TagBlock>
+        </div>
+        <div class="mt-4 flex flex-wrap gap-4 justify-center">
+            {#each tierSponsors as sponsor}
+                <a href={sponsor.url} target="_blank">
+                    <div
+                        class="
+                            rounded-xl bg-white
+                            {small ? 'w-40' : 'w-52 md:w-80'}
+                            aspect-square
+                            grid place-items-center
+                            bg-contain bg-no-repeat bg-center
+                        "
+                        style="background-image: url({sponsor.logo});"
+                        title={sponsor.name}
+                    >
+                    </div>
+                </a>
+            {/each}
+        </div>
+    </div>
+{/each}
