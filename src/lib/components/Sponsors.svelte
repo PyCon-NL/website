@@ -1,73 +1,21 @@
 <script lang="ts">
-	import { groupBy } from "lodash-es";
-	import TagBlock from "$lib/components/core/TagBlock.svelte";
+    import { groupBy } from "lodash-es";
+    import TagBlock from "$lib/components/core/TagBlock.svelte";
+    import type { Sponsor, Tier } from "$lib/data/types";
 
+    export let sponsors: Sponsor[] = [];
     export let small: boolean = false;
-
-    type Tier = "platinum" | "gold" | "silver" | "bronze"
-
-    type Sponsor = {
-        tier: Tier
-        name: string
-        logo: string
-        url?: string
-    }
 
     const colors: Record<Tier, "north4" | "north" | "north2" | "north3"> = {
         platinum: "north4",
         gold: "north",
         silver: "north2",
         bronze: "north3",
-    }
+    };
 
-    const sponsors: Sponsor[] = [
-        {
-            tier: "platinum",
-            name: "Platinum Placeholder Sponsor",
-            logo: "/sponsors/platinum.png",
-            url: "https://www.platinum-sponsor.com",
-        },
-        {
-            tier: "silver",
-            name: "Vakgroep Software Ontwikkeling",
-            logo: "/sponsors/vso.png",
-            url: "https://www.amsterdam.nl/bestuur-organisatie/organisatie/digitalisering-innovatie-en-informatie/",
-        },
-        {
-            tier: "gold",
-            name: "Sopra Steria",
-            logo: "/sponsors/ssg.jpg",
-            url: "https://www.soprasteria.nl",
-        },
-        {
-            tier: "silver",
-            name: "Qstars IT",
-            logo: "/sponsors/qstars.png",
-            url: "https://www.qstars.nl",
-        },
-        {
-            tier: "bronze",
-            name: "Four Digits",
-            logo: "/sponsors/fourdigits.png",
-            url: "https://www.fourdigits.nl/",
-        },
-        {
-            tier: "bronze",
-            name: "Channable",
-            logo: "/sponsors/channable.png",
-            url: "https://www.channable.com/",
-        },
-        {
-            tier: "silver",
-            name: "Red Hat",
-            logo: "/sponsors/redhat.png",
-            url: "https://www.redhat.com/",
-        }
-    ];
-
-    const byTier: Partial<Record<Tier, Sponsor[]>> = groupBy(sponsors, s => s.tier);
-    const tiers = new Set(sponsors.map(s => s.tier));
-    const sortedTiers: Tier[] = (["platinum", "gold", "silver", "bronze"] as Tier[]).filter(t => tiers.has(t));
+    $: byTier = groupBy(sponsors, s => s.tier) as Partial<Record<Tier, Sponsor[]>>;
+    $: tiers = new Set(sponsors.map(s => s.tier));
+    $: sortedTiers = (["platinum", "gold", "silver", "bronze"] as Tier[]).filter(t => tiers.has(t));
 </script>
 
 {#each sortedTiers as tier}

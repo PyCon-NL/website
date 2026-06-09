@@ -40,8 +40,8 @@
             label: "Session passes",
             content: [
                 ["Free conference passes", "Exhibitor passes", "Discounted conference passes"],
-                ["6", "4", "6"],
-                ["6", "4", "6"],
+                ["6", "5", "6"],
+                ["4", "4", "4"],
                 ["3", "3", "3"],
                 ["2", "2", "1"]
             ]
@@ -53,12 +53,12 @@
                     "Social media announcement",
                     "Mention in opening speech",
                     "Logo on badges",
-                    "Logo on PyConNL video",
-                    "Logo on PyConNL banners",
-                    "Logo on PyConNL website",
+                    "Logo on PyCon NL video",
+                    "Logo on PyCon NL banners",
+                    "Logo on PyCon NL website",
                     "Option to distribute goodies at the event",
                     "Vacancy flyer may be distrubited",
-                    "Logo in the PyConNL digital program guide"
+                    "Logo in the PyCon NL digital program guide"
                 ],
                 ["✔", "✔", "✔", "✔", "✔", "✔", "✔", "✔", "✔"],
                 ["✔", "✔", "✔", "✔", "✔", "✔", "✔", "✔", "✔"],
@@ -70,8 +70,8 @@
             label: "Booths",
             content: [
                 ["Power & Wi-Fi", "Premier booth location", "Booth dimensions"],
-                ["✔", "✔", "3 × 2.5 (10m&sup2;)"],
-                ["✔", "✔", "3 × 2.5 (10m&sup2;)"],
+                ["✔", "✔", "4 × 3 (12m&sup2;)"],
+                ["✔", "✔", "3 × 2.5 (7.5m&sup2;)"],
                 ["✔", "", "2 × 2 (4m&sup2;)"],
                 ["✔", "", "Table"]
             ]

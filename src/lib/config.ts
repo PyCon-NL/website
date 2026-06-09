@@ -1,7 +1,8 @@
 // Conference date and venue information
-export const YEAR = 2025;
-export const CONFERENCE_DATE = "October 16"
+export const YEAR = 2026;
+export const CONFERENCE_DATE = "October 15"
 export const CONFERENCE_DAY = "Thursday";
+export const PAPERS_PROPOSAL_DEADLINE = "Sunday, August 16"
 export const CONFERENCE_VENUE = "Jaarbeurs Utrecht, Netherlands";
 
 // Forms, links and emails
@@ -17,9 +18,6 @@ export const CONTACT_EMAIL = 'info@pycon-nl.org';
 // Call for papers and volunteers visibility
 export const HIDE_CALL_FOR_PAPERS = false;
 export const HIDE_CALL_FOR_VOLUNTEERS = false;
-
-// Deadlines
-export const PAPERS_PROPOSAL_DEADLINE = "Sunday, August 17"
 
 // Sponsor pricing information
 export const PLATINUM_PRICE = "€9,000.00";
