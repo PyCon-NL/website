@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Poster from './Background.svelte';
 	import TagBlock from '$lib/components/core/TagBlock.svelte';
-	import { YEAR } from '$lib/config';
+	import { YEAR, TICKETS_URL } from '$lib/config';
 	import { Icon } from 'svelte-awesome';
 	import { chevronDown } from 'svelte-awesome/icons';
 	import Countdown from './Countdown.svelte';
@@ -13,7 +13,7 @@
 		disabled?: boolean
 	}
 
-	const tickets = { label: "Ticket Shop", link: "https://www.eventbrite.nl/e/1388174410029?aff=oddtdtcreator" };
+	const tickets = { label: "Ticket Shop", link: TICKETS_URL };
 	const sponsors = { label: "Call for Sponsors", link: "/call-for-sponsors" };
 	const volunteers = { label: "Call for Volunteers", link: "/call-for-volunteers" };
 	const papers = { label: "Call for Papers", link: "/call-for-papers" };

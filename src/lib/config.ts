@@ -4,7 +4,8 @@ export const CONFERENCE_DATE = "October 16"
 export const CONFERENCE_DAY = "Thursday";
 export const CONFERENCE_VENUE = "Jaarbeurs Utrecht, Netherlands";
 
-// Forms and links
+// Forms, links and emails
+export const TICKETS_URL = "https://www.eventbrite.nl/e/1388174410029?aff=oddtdtcreator";
 export const PAPERS_FORM_URL = "https://forms.gle/UrVA9YCaDC6WhD3F7";
 export const VOLUNTEERS_FORM_URL = "https://forms.gle/placeholder";
 export const GITHUB_URL = 'https://github.com/PyCon-NL/website';
