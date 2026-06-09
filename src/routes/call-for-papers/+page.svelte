@@ -1,6 +1,7 @@
 <script lang="ts">
 	import TagBlock from "$lib/components/core/TagBlock.svelte";
 	import Fly from "$lib/components/fly/Fly.svelte";
+	import { YEAR, DATE } from "$lib/config";
 
     import speaker from "$lib/assets/images/Conference speaker-pana.svg?raw";
 </script>
@@ -10,13 +11,13 @@
 
         <div class="flex flex-col items-center">
             <div class="my-8 max-w-xl text-3xl font-bold text-center">
-                Thank you for your interest in submitting your proposal for a talk or tutorial to PyCon NL 2025!
+                Thank you for your interest in submitting your proposal for a talk or tutorial to PyCon NL {YEAR}!
             </div>
             <div>
                 <p>Please note:</p>
                 <ul class="list-disc list-inside mt-2">
-                    <li>Proposal deadline: Sunday, August 17, 2025 at 23:59 CEST</li>
-                    <li>Conference date: Thursday, October 16, 2025</li>
+                    <li>Proposal deadline: Sunday, August 17, {YEAR} at 23:59 CEST</li>
+                    <li>Conference date: Thursday, {DATE}, {YEAR}</li>
                     <li>Venue: Jaarbeurs Utrecht, Netherlands</li>
                 </ul>
             </div>
@@ -29,7 +30,7 @@
                     <Fly offset={10} duration={1000}>
                         <TagBlock class="max-w-lg" direction="left" backgroundColor="north" extend>
                             <div class="font-bold">Conference Format:</div>
-                            PyCon Netherlands 2025 is a multi-track Python conference. Talk slots are 25 minutes (excluding a 5 minute Q&A), Tutorial slots are 105 minutes.
+                            PyCon Netherlands {YEAR} is a multi-track Python conference. Talk slots are 25 minutes (excluding a 5 minute Q&A), Tutorial slots are 105 minutes.
                         </TagBlock>
                     </Fly>
                     <Fly offset={10} duration={1000} delay={200}>
@@ -50,7 +51,7 @@
 
         <div class="mt-4 flex flex-col items-center justify-center">
             <p class="italic text-lg">
-                We hope to see you on stage at PyCon NL 2025 on October 16, 2025.
+                We hope to see you on stage at PyCon NL {YEAR} on {DATE}, {YEAR}.
             </p>
             <TagBlock class="mt-8 text-lg" backgroundColor="north" link="https://forms.gle/UrVA9YCaDC6WhD3F7" externalLink>
                 <div class="font-bold">

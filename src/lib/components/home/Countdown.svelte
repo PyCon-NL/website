@@ -1,5 +1,6 @@
 <script lang="ts">
-	const dest = new Date('oct 16, 2025 00:00:00').getTime();
+	import { YEAR, DATE } from '$lib/config';
+	const dest = new Date(`${DATE}, ${YEAR} 00:00:00`).getTime();
 
 	let days = 0, hours = 0, minutes = 0, seconds = 0;
 	const labels = ["days", "hours", "min", "sec"];

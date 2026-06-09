@@ -1,16 +1,17 @@
 <script lang="ts">
 	import { schedule2025 } from "$lib/data/schedules";
 	import { rooms as allRooms, timeSlots as allTimeSlots, type Year } from "$lib/data/types";
+	import { YEAR } from "$lib/config";
 	import TimeSlot from "$lib/components/schedule/TimeSlot.svelte";
 	import Sponsors from "$lib/components/Sponsors.svelte";
 
-	const year: Year = 2025
+	const year: Year = YEAR
 
 	const timeSlots = allTimeSlots[year]
 	const rooms = allRooms[year]
 
 	const today = new Date();
-	const target = new Date("2025-10-16");
+	const target = new Date(`${YEAR}-10-16`);
 
 	const isConDay =
 		today.getFullYear() === target.getFullYear() &&
@@ -21,7 +22,7 @@
 
 <div class="m-8 mt-20 py-6">
 	<div class="m-auto w-full max-w-3xl text-black flex flex-col items-center">
-		<div class="mt-4 font-bold text-3xl">Schedule PyCon NL 2025</div>
+		<div class="mt-4 font-bold text-3xl">Schedule PyCon NL {YEAR}</div>
 		<div class="italic text-lg">(Main events happen in the Progress room)</div>
 
 		<div class="mt-12 flex flex-col md:grid md-schedule-columns text-center gap-2 items-center">

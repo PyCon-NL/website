@@ -1,13 +1,15 @@
-export type Year = 2025 // | 2026 | 2027 ...
+import { YEAR } from '$lib/config';
 
-export const currentYear: Year = 2025
+export type Year = typeof YEAR
+
+export const currentYear: Year = YEAR
 
 export const rooms = {
-    2025: ["Progress", "Quest"],
+    [YEAR]: ["Progress", "Quest"],
 } as const;
 
 export const timeSlots = {
-    2025: ["08:00", "09:30", "09:45", "10:30", "10:45", "11:25", "12:05", "12:35", "13:30", "14:05", "14:35", "14:50", "15:25", "15:55", "16:10", "16:55", "17:05"]
+    [YEAR]: ["08:00", "09:30", "09:45", "10:30", "10:45", "11:25", "12:05", "12:35", "13:30", "14:05", "14:35", "14:50", "15:25", "15:55", "16:10", "16:55", "17:05"]
 } as const;
 
 export type Speaker = {

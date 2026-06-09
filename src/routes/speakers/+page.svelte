@@ -7,6 +7,7 @@
 
     import { speakers } from "$lib/data/speakers";
 	import { initials, type Speaker } from "$lib/data/types";
+	import { YEAR } from "$lib/config";
 
     function shuffled<T>(ts: T[]) {
         return ts.map(value => ({ value, sort: Math.random() }))
@@ -17,7 +18,7 @@
     let shuffledSpeakers: Speaker[] = []
 
     onMount(() => {
-        shuffledSpeakers = shuffled(speakers.filter(s => s.years.includes(2025)))
+        shuffledSpeakers = shuffled(speakers.filter(s => s.years.includes(YEAR)))
     })
 
     const tiles = ["01.png", "02.png"]

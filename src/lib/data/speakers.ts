@@ -1,4 +1,5 @@
 import type { Speaker } from "./types";
+import { YEAR } from '$lib/config';
 
 // Note: never remove speakers, only add or update
 // this way permalinks to speakers will be valid in the future pycon years
@@ -17,7 +18,7 @@ export const speakers: Speaker[] = [
 
 While his primary expertise lies in TypeScript development, William has dedicated the past 3 years to mastering Python.`,
         image: "/speakers/william_lacerda.jpg",
-        years: [2025],
+        years: [YEAR],
     },
     {
         id: 2,
@@ -29,7 +30,7 @@ I’ve worked across startups and corporates, mostly in Python, with a love for 
 
 Author of \`whenever\` and \`slotscheck\`, I focus on making code maintainable and sharing deep insights with the community.`,
         image: "/speakers/arie_bovenberg.jpg",
-        years: [2025],
+        years: [YEAR],
     },
     {
         id: 3,
@@ -46,7 +47,7 @@ Outside of coding, I’m known for my positive outlook and my eagerness to help 
 
 I love connecting with people, sharing knowledge, and contributing to a collaborative and forward-thinking industry.`,
         image: "/speakers/thiago_bellini_ribeiro.jpg",
-        years: [2025],
+        years: [YEAR],
     },
     {
         id: 4,
@@ -61,7 +62,7 @@ I am passionate about building products that solve real user problems, and I car
 
 I am also a strong advocate for open-source software, and I find working with the community to be both inspiring and energising.`,
         image: "/speakers/merel_theisen.png",
-        years: [2025],
+        years: [YEAR],
     },
     {
         id: 5,
@@ -74,7 +75,7 @@ I am also a strong advocate for open-source software, and I find working with th
 He has contributed to Django and many other Python open source projects.
 
 Klaas is an engaging speaker, with talks at tech conferences including DjangoCon Europe and the European Lisp Symposium, and is a regular guest at local meetups. He was also the European University Debating Champion.`,
-        years: [2025],
+        years: [YEAR],
     },
     {
         id: 6,
@@ -95,7 +96,7 @@ Alex earned a bachelor’s degree from the University of Groningen, where he als
 
 In his free time, Alex enjoys playing chess and bouldering.`,
         image: "/speakers/alex_procelewski.jpg",
-        years: [2025]
+        years: [YEAR]
     },
     {
         id: 7,
@@ -110,7 +111,7 @@ He is passionate about promoting good practices in data management and scientifi
 Outside of work, Aris is actively involved in the European Python community, contributing to the organization and support of conferences and community initiatives.
 
 When he's not at his computer, you’ll likely find him dancing salsa.`,
-        years: [2025],
+        years: [YEAR],
     },
     {
         id: 8,
@@ -125,7 +126,7 @@ Sometimes dipping a toe in JavaScript and Bash when unavoidable. Currently worki
 
 Privately working on gamification of encryption and of trusted knowledge.`,
         image: "/speakers/carlo_van_overbeek.jpg",
-        years: [2025],
+        years: [YEAR],
     },
     {
         id: 9,
@@ -139,7 +140,7 @@ I developed the Diátaxis documentation framework, which is now widely used in t
 I enjoy helping organise community conferences for Python and Django. That includes multiple editions of DjangoCon Europe, as well as the first editions of PyCon Africa and DjangoCon Africa.
 
 I also enjoy helping people and open-source projects improve their documentation.`,
-        years: [2025],
+        years: [YEAR],
     },
     {
         id: 10,
@@ -150,7 +151,7 @@ I also enjoy helping people and open-source projects improve their documentation
         bio: `Sebastiaan is a Python enthusiast who likes to think about good software design and engineering.
 
 He is a fellow of the EuroPython Society and the Python Software Foundation, works as a Principal Expert for the Pythoneers at Sopra Steria Netherlands, and frequently speaks at conferences around the world.`,
-        years: [2025],
+        years: [YEAR],
     },
     {
         id: 11,
@@ -164,7 +165,7 @@ He co-designed the language that Python is based on, was the first user of the o
 
 In 2022 he received the ACM SIGCHI Lifetime Practice Award, and in 2023 was named an ACM Distinguished Speaker.`,
         image: "/speakers/steven_pemberton.jpg",
-        years: [2025],
+        years: [YEAR],
     },
     {
         id: 12,
@@ -177,7 +178,7 @@ Through her one-woman consulting company OxyKodit, she develops tailored AI solu
 
 She's also passionate about open-source, having worked on various popular Python packages including FastAPI, Typer and spaCy.`,
         image: "/speakers/sofie_van_landeghem.jpg",
-        years: [2025],
+        years: [YEAR],
     },
     {
         id: 13,
@@ -192,7 +193,7 @@ Whether it’s turning emotions into visuals, building fictional chatbots, or cr
 
 I write, build, explore, and sometimes get beautifully lost in too many ideas, but always with Python by my side.`,
         image: "/speakers/ozge_cinko.jpg",
-        years: [2025],
+        years: [YEAR],
     },
     {
         id: 14,
@@ -205,6 +206,6 @@ I enjoy sharing my knowledge by writing articles on Medium and other platforms, 
 
 Passionate about clean code and continuous learning, I aim to help the community by delivering clear and practical talks.`,
         image: "/speakers/kader_miyanyedi.jpg",
-        years: [2025],
+        years: [YEAR],
     }
 ];

@@ -1,6 +1,7 @@
 <script lang="ts">
 	import TagBlock from "$lib/components/core/TagBlock.svelte";
 	import Fly from "$lib/components/fly/Fly.svelte";
+	import { YEAR } from "$lib/config";
 
     import volunteer from "$lib/assets/images/Hello-pana.svg?raw";
     import organize from "$lib/assets/images/Organizing projects-pana.svg?raw";
@@ -16,7 +17,7 @@
         </div>
         <div class="w-full text-center font-bold text-xl">
             <TagBlock backgroundColor="north3">
-                Want to help make PyCon NL 2025 an unforgettable event?
+                Want to help make PyCon NL {YEAR} an unforgettable event?
             </TagBlock>
         </div>
 

@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Poster from './Background.svelte';
 	import TagBlock from '$lib/components/core/TagBlock.svelte';
+	import { YEAR } from '$lib/config';
 	import { Icon } from 'svelte-awesome';
 	import { chevronDown } from 'svelte-awesome/icons';
 	import Countdown from './Countdown.svelte';
@@ -37,7 +38,7 @@
 					<TagBlock direction="right" extend backgroundColor="north3">
 						<div class="inline-flex text-lg text-white">
 							<div class="text-xl">
-								<span class="pr-4 text-north2 font-bold">Save the date <span class="whitespace-pre">16-10-2025</span></span>
+								<span class="pr-4 text-north2 font-bold">Save the date <span class="whitespace-pre">16-10-{YEAR}</span></span>
 								<Countdown />
 							</div>
 						</div>
@@ -89,7 +90,7 @@
 				backgroundColor="north"
 			>
 				<div class="text-3xl font-bold cursor-default">
-					PYCON NL<span class="px-4">|</span><span class="pr-4 text-ordina">2025</span>
+					PYCON NL<span class="px-4">|</span><span class="pr-4 text-ordina">{YEAR}</span>
 				</div>
 			</TagBlock>
 		</div>

@@ -1,4 +1,5 @@
 import type { Schedule, Year } from "./types";
+import { YEAR } from '$lib/config';
 
 export const schedule2025: Schedule<2025> = [
     {
@@ -26,7 +27,7 @@ Does that mean we are doing it wrong? And if so, what are the alternatives?
         room: "Progress",
         speakerId: 11,
         timeSlot: "09:45",
-        year: 2025,
+        year: YEAR,
         id: 1,
     },
     {
@@ -55,7 +56,7 @@ Let’s take your static typing skills to the next level - and become true typin
         room: "Progress",
         speakerId: 3,
         timeSlot: "10:45",
-        year: 2025,
+        year: YEAR,
         id: 2,
     },
     {
@@ -73,7 +74,7 @@ This talk is ideal for developers interested in audio processing, real-world app
         room: "Quest",
         speakerId: 13,
         timeSlot: "10:45",
-        year: 2025,
+        year: YEAR,
         id: 3,
     },
     {
@@ -89,7 +90,7 @@ This is a practical talk for engineers and teams considering FastAPI in producti
         room: "Progress",
         speakerId: 1,
         timeSlot: "11:25",
-        year: 2025,
+        year: YEAR,
         id: 4,
     },
     {
@@ -105,7 +106,7 @@ By the end of the talk, you’ll see how a carefully engineered Python stack can
         room: "Quest",
         speakerId: 6,
         timeSlot: "11:25",
-        year: 2025,
+        year: YEAR,
         id: 5,
     },
     {
@@ -119,7 +120,7 @@ Is your knowledge current, or are your optimizations working against you? This s
         room: "Progress",
         speakerId: 2,
         timeSlot: "12:05",
-        year: 2025,
+        year: YEAR,
         id: 6,
     },
     {
@@ -135,7 +136,7 @@ Whether you're building a data science tool, a web app, an API or a library, thi
         room: "Quest",
         speakerId: 7,
         timeSlot: "12:05",
-        year: 2025,
+        year: YEAR,
         id: 7,
     },
     {
@@ -161,7 +162,7 @@ By the end of my talk, you will not be a security expert, but you should have en
         room: "Progress",
         speakerId: 10,
         timeSlot: "13:30",
-        year: 2025,
+        year: YEAR,
         id: 8,
     },
     {
@@ -177,7 +178,7 @@ The Python development workflow your past self had always hoped for is finally h
         room: "Quest",
         speakerId: 8,
         timeSlot: "13:30",
-        year: 2025,
+        year: YEAR,
         multiSlot: 2,
         id: 9,
     },
@@ -195,7 +196,7 @@ Whether you're an engineer relying on open source tools or someone curious about
         room: "Progress",
         speakerId: 4,
         timeSlot: "14:05",
-        year: 2025,
+        year: YEAR,
         id: 10,
     },
     {
@@ -220,7 +221,7 @@ With easy-to-understand examples and real-world tips, this talk will help you im
         room: "Progress",
         speakerId: 14,
         timeSlot: "14:50",
-        year: 2025,
+        year: YEAR,
         id: 11,
     },
     {
@@ -240,7 +241,7 @@ At the heart of them is a maturity model that helps drive practice quality at sc
         room: "Quest",
         speakerId: 9,
         timeSlot: "14:50",
-        year: 2025,
+        year: YEAR,
         id: 12,
         multiSlot: 2,
     },
@@ -265,7 +266,7 @@ You’ll walk away with sharper debugging instincts, some practical tricks, and 
         room: "Progress",
         speakerId: 5,
         timeSlot: "15:25",
-        year: 2025,
+        year: YEAR,
         id: 13,
     },
     {
@@ -287,7 +288,7 @@ This talk will conclude with a list of practical recommendations for building ML
         room: "Progress",
         speakerId: 12,
         timeSlot: "16:10",
-        year: 2025,
+        year: YEAR,
         id: 14,
     },
     {
