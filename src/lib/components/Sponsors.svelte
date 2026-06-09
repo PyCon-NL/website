@@ -73,7 +73,7 @@
         </div>
         <div class="mt-4 flex flex-wrap gap-4 justify-center">
             {#each tierSponsors as sponsor}
-                <a href={sponsor.url} target="_blank">
+                <a href={sponsor.url} target="_blank" aria-label={sponsor.name}>
                     <div
                         class="
                             rounded-xl bg-white
@@ -83,7 +83,6 @@
                             bg-contain bg-no-repeat bg-center
                         "
                         style="background-image: url({sponsor.logo});"
-                        title={sponsor.name}
                     >
                     </div>
                 </a>
