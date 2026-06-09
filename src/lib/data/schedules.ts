@@ -1,7 +1,7 @@
 import type { Schedule, Year } from "./types";
 import { YEAR } from '$lib/config';
 
-export const schedule2025: Schedule<2025> = [
+export const schedule2025: Schedule<Year> = [
     {
         type: "other",
         trackType: "common",
@@ -306,5 +306,5 @@ This talk will conclude with a list of practical recommendations for building ML
 ]
 
 export const allSchedules: Partial<Record<Year, Schedule<Year>>> = {
-    2025: schedule2025
+    [YEAR]: schedule2025
 }
