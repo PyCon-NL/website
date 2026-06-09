@@ -1,0 +1,1 @@
+export const GITHUB_URL = 'https://github.com/PyCon-NL/website';

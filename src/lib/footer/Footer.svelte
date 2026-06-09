@@ -1,5 +1,6 @@
 <script>
 	import TagBlock from '$lib/components/core/TagBlock.svelte';
+	import { GITHUB_URL } from '$lib/config';
 </script>
 
 <div
@@ -61,7 +62,7 @@
 		<TagBlock
 			class="mx-8"
 			backgroundColor="north3" small
-			link="https://github.com/Ordina-Group/pythonconferentie.nl"
+			link={GITHUB_URL}
 			externalLink
 		>
 			Source on GitHub
