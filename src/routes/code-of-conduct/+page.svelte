@@ -213,7 +213,7 @@
 	<div class="pb-4">Local Emergency Numbers</div>
 	<ul class="pl-14">
 		<li class="pb-4">
-			(European) emergency services:<span class="px-1 font-bold">112<span /></span>
+			(European) emergency services:<span class="px-1 font-bold">112</span>
 		</li>
 		<li class="pb-4">
 			Non-emergency police services:<span class="px-1 font-bold">0900-8844</span>

@@ -55,7 +55,7 @@
     --endLeft: {endLeft}px;
     --transitionTime: {transitionTime}ms;
   "
-/>
+></div>
 
 <style lang="postcss">
 	.fade-in {

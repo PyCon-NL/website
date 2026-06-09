@@ -56,7 +56,7 @@
 			class:bg-north={backgroundColor === 'north'}
 			class:bg-north2={backgroundColor === 'north2'}
 			class:bg-north3={backgroundColor === 'north3'}
-		/>
+		></div>
 	{/if}
 	<div
 		id="main-container"
@@ -113,7 +113,7 @@
 			class:bg-north={backgroundColor === 'north'}
 			class:bg-north2={backgroundColor === 'north2'}
 			class:bg-north3={backgroundColor === 'north3'}
-		/>
+		></div>
 	{/if}
 </div>
 
