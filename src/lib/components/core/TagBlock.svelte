@@ -8,7 +8,8 @@
 		| 'soprasteria'
 		| 'north'
 		| 'north2'
-		| 'north3' = 'ordina';
+		| 'north3'
+		| 'north4' = 'ordina';
 	export let direction: 'left' | 'right' | 'both' = 'both';
 	export let extend: boolean = false;
 	export let small: boolean = false;
@@ -43,6 +44,7 @@
 					class:fill-north={backgroundColor === 'north'}
 					class:fill-north2={backgroundColor === 'north2'}
 					class:fill-north3={backgroundColor === 'north3'}
+					class:fill-north4={backgroundColor === 'north4'}
 				/>
 			</g>
 		</svg>
@@ -56,6 +58,7 @@
 			class:bg-north={backgroundColor === 'north'}
 			class:bg-north2={backgroundColor === 'north2'}
 			class:bg-north3={backgroundColor === 'north3'}
+			class:bg-north4={backgroundColor === 'north4'}
 		></div>
 	{/if}
 	<div
@@ -74,6 +77,7 @@
 		class:bg-north={backgroundColor === 'north'}
 		class:bg-north2={backgroundColor === 'north2'}
 		class:bg-north3={backgroundColor === 'north3'}
+		class:bg-north4={backgroundColor === 'north4'}
 		class:md:pl-4={direction === 'right' && !small}
 		class:md:pl-1={direction === 'right' && small}
 		class:md:pr-0={direction === 'right'}
@@ -100,6 +104,7 @@
 					class:fill-north={backgroundColor === 'north'}
 					class:fill-north2={backgroundColor === 'north2'}
 					class:fill-north3={backgroundColor === 'north3'}
+					class:fill-north4={backgroundColor === 'north4'}
 				/>
 			</g>
 		</svg>
@@ -113,6 +118,7 @@
 			class:bg-north={backgroundColor === 'north'}
 			class:bg-north2={backgroundColor === 'north2'}
 			class:bg-north3={backgroundColor === 'north3'}
+			class:bg-north4={backgroundColor === 'north4'}
 		></div>
 	{/if}
 </div>

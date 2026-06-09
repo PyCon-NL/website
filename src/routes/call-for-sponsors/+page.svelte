@@ -1,26 +1,36 @@
 <script lang="ts">
     import TagBlock from '$lib/components/core/TagBlock.svelte';
 	import Fly from "$lib/components/fly/Fly.svelte";
-	import { CONTACT_EMAIL } from '$lib/config';
+	import {
+        CONTACT_EMAIL,
+        YEAR,
+        DATE,
+        PLATINUM_PRICE,
+        GOLD_PRICE,
+        SILVER_PRICE,
+        BRONZE_PRICE
+    } from '$lib/config';
     import sponsors from "$lib/assets/images/Sponsor-pana.svg?raw";
     import tiers from "$lib/assets/images/Holding the arrow-pana.svg?raw";
 
-    const headers = ["", "Gold", "Silver", "Bronze"];
+    const headers = ["", "Platinum", "Gold", "Silver", "Bronze"];
 
     const tableRows = [
         {
             label: "Pricing",
             content: [
                 ["Package price (excluding VAT)"],
-                ["€4,000.00"],
-                ["€2,500.00"],
-                ["€1,000.00"]
+                [PLATINUM_PRICE],
+                [GOLD_PRICE],
+                [SILVER_PRICE],
+                [BRONZE_PRICE]
             ]
         },
         {
             label: "Availability",
             content: [
                 ["Number of available slots"],
+                ["4"],
                 ["4"],
                 ["3"],
                 ["3"]
@@ -30,6 +40,7 @@
             label: "Session passes",
             content: [
                 ["Free conference passes", "Exhibitor passes", "Discounted conference passes"],
+                ["6", "4", "6"],
                 ["6", "4", "6"],
                 ["3", "3", "3"],
                 ["2", "2", "1"]
@@ -50,6 +61,7 @@
                     "Logo in the PyConNL digital program guide"
                 ],
                 ["✔", "✔", "✔", "✔", "✔", "✔", "✔", "✔", "✔"],
+                ["✔", "✔", "✔", "✔", "✔", "✔", "✔", "✔", "✔"],
                 ["✔", "", "✔", "✔", "", "✔", "€200 extra", "✔", "✔"],
                 ["✔", "", "", "", "", "✔", "", "", "✔"]
             ]
@@ -58,6 +70,7 @@
             label: "Booths",
             content: [
                 ["Power & Wi-Fi", "Premier booth location", "Booth dimensions"],
+                ["✔", "✔", "3 × 2.5 (10m&sup2;)"],
                 ["✔", "✔", "3 × 2.5 (10m&sup2;)"],
                 ["✔", "", "2 × 2 (4m&sup2;)"],
                 ["✔", "", "Table"]
@@ -71,7 +84,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 items-center">
             <Fly offset={-10} duration={1000}>
                 <TagBlock class="float-left max-w-lg" direction="right" extend backgroundColor="north3">
-                    <p>We are excited to invite you to explore our sponsor packages for PyCon NL 2025, taking place on October 16, 2025.</p>
+                    <p>We are excited to invite you to explore our sponsor packages for PyCon NL {YEAR}, taking place on {DATE}, {YEAR}.</p>
                     <p>Our packages are designed to offer you maximum visibility and engagement with our vibrant community of Python enthusiasts from all over the world.</p>
                 </TagBlock>
             </Fly>
@@ -86,6 +99,10 @@
 
         <div class="mt-8 max-w-3xl">
             <div class="grid gap-4">
+                <TagBlock extend direction="both" backgroundColor="north4">
+                    <h3 class="font-bold text-xl">Platinum Package</h3>
+                    <p>WIP: The Platinum Package is our most exclusive tier, offering unparalleled visibility and premier access for our top-tier sponsors. Platinum sponsors receive prime booth placement, logo features across all conference materials and videos, a dedicated social media campaign, and prominent mentions throughout the event.</p>
+                </TagBlock>
                 <TagBlock extend direction="both" backgroundColor="north">
                     <h3 class="font-bold text-xl">Gold Package</h3>
                     <p>The Gold Package provides substantial visibility with logo placements, mentions in email newsletters, and social media promotions and the opening speech. Gold sponsors will also have 6 conference passes, and will be able to network directly with attendees via their networking table.</p>
@@ -141,7 +158,7 @@
 
         <div class="mt-20 max-w-4xl">
             <p>We would be delighted to discuss which package best aligns with your marketing and engagement goals. Please let us know if you have any specific requests or ideas for recognition that would make this partnership even more valuable for you.</p>
-            <p class="mt-[1em]">If you are interested in participating or have any questions, please get in touch us:</p>
+            <p class="mt-[1em]">If you are interested in participating or have any questions, please get in touch with us:</p>
         </div>
 
         <address class="italic mt-4">
@@ -157,7 +174,7 @@
         </div>
 
         <div class="mt-20 max-w-4xl">
-            <p>Thank you for considering this opportunity. We look forward to the possibility of collaborating with you to make PyCon NL 2025 a success!</p>
+            <p>Thank you for considering this opportunity. We look forward to the possibility of collaborating with you to make PyCon NL {YEAR} a success!</p>
         </div>
 
         <!-- TODO: sponsors 2025 toevoegen -->
@@ -192,7 +209,7 @@
     .responsive-table {
         min-width: 500px;
         width: 100%;
-        font-size: calc(0.2rem + 1vw);
+        font-size: clamp(0.75rem, 0.2rem + 1vw, 1rem);
     }
     .responsive-table td,
     .responsive-table th {
