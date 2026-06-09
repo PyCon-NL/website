@@ -24,8 +24,8 @@
             label: "Get Involved",
             submenu: [
                 { label: "Call for Sponsors", route: "/call-for-sponsors" },
-                { label: "Call for Papers", route: "/call-for-papers", disabled: true },
-                { label: "Call for Volunteers", route: "/call-for-volunteers", disabled: true },
+                { label: "Call for Papers", route: "/call-for-papers", disabled: false },
+                { label: "Call for Volunteers", route: "/call-for-volunteers", disabled: false },
             ],
         },
         {
