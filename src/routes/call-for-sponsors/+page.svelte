@@ -1,6 +1,7 @@
 <script lang="ts">
     import TagBlock from '$lib/components/core/TagBlock.svelte';
 	import Fly from "$lib/components/fly/Fly.svelte";
+	import { CONTACT_EMAIL } from '$lib/config';
     import sponsors from "$lib/assets/images/Sponsor-pana.svg?raw";
     import tiers from "$lib/assets/images/Holding the arrow-pana.svg?raw";
 
@@ -140,17 +141,15 @@
 
         <div class="mt-20 max-w-4xl">
             <p>We would be delighted to discuss which package best aligns with your marketing and engagement goals. Please let us know if you have any specific requests or ideas for recognition that would make this partnership even more valuable for you.</p>
-            <p class="mt-[1em]">If you are interested in participating or have any questions, please get in touch with:</p>
+            <p class="mt-[1em]">If you are interested in participating or have any questions, please get in touch us:</p>
         </div>
 
         <address class="italic mt-4">
-            <p>Eva Munscher</p>
-            <p>Esther Roghair</p>
-            <a href="mailto:pycon.netherlands@gmail.com">pycon.netherlands@gmail.com</a><br />
+            <a href="mailto:{CONTACT_EMAIL}">{CONTACT_EMAIL}</a><br />
         </address>
 
         <div class="mt-4 flex items-center justify-center">
-            <TagBlock class="text-lg" backgroundColor="north" link="mailto:pycon.netherlands@gmail.com" externalLink>
+            <TagBlock class="text-lg" backgroundColor="north" link="mailto:{CONTACT_EMAIL}" externalLink>
                 <div class="font-bold">
                     Contact<span class="px-2">|</span><span class="text-ordina">Get in contact about sponsorship!</span>
                 </div>

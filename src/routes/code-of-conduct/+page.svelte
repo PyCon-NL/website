@@ -1,3 +1,7 @@
+<script lang="ts">
+	import { CONTACT_EMAIL } from '$lib/config';
+</script>
+
 <div class="p-8 m-auto w-full max-w-4xl">
 	<h1 class="mt-20 py-6 text-3xl font-bold">CODE OF CONDUCT</h1>
 	<div>
@@ -198,7 +202,7 @@
 			address
 			here
 		>
-			which is monitored by pycon.netherlands@gmail.com.</email
+			which is monitored by {CONTACT_EMAIL}.</email
 		>
 	</div>
 	<div class="pb-4">In case of a conflict of interest, you can individually contact:</div>
