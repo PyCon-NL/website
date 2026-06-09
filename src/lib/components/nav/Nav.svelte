@@ -1,6 +1,7 @@
 <script lang="ts">
     import { page } from "$app/stores";
 	import { onMount } from "svelte";
+    import { HIDE_CALL_FOR_PAPERS, HIDE_CALL_FOR_VOLUNTEERS } from "$lib/config";
 
     $: currentPath = $page.url.pathname;
 
@@ -24,8 +25,8 @@
             label: "Get Involved",
             submenu: [
                 { label: "Call for Sponsors", route: "/call-for-sponsors" },
-                { label: "Call for Papers", route: "/call-for-papers", disabled: false },
-                { label: "Call for Volunteers", route: "/call-for-volunteers", disabled: false },
+                { label: "Call for Papers", route: "/call-for-papers", disabled: HIDE_CALL_FOR_PAPERS },
+                { label: "Call for Volunteers", route: "/call-for-volunteers", disabled: HIDE_CALL_FOR_VOLUNTEERS },
             ],
         },
         {

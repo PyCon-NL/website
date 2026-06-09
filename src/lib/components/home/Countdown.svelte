@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { YEAR, DATE } from '$lib/config';
-	const dest = new Date(`${DATE}, ${YEAR} 00:00:00`).getTime();
+	import { YEAR, CONFERENCE_DATE } from '$lib/config';
+	const dest = new Date(`${CONFERENCE_DATE}, ${YEAR} 00:00:00`).getTime();
 
 	let days = 0, hours = 0, minutes = 0, seconds = 0;
 	const labels = ["days", "hours", "min", "sec"];

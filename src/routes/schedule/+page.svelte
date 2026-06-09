@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { schedule2025 } from "$lib/data/schedules";
 	import { rooms as allRooms, timeSlots as allTimeSlots, type Year } from "$lib/data/types";
-	import { YEAR } from "$lib/config";
+	import { YEAR, CONFERENCE_DATE } from "$lib/config";
 	import TimeSlot from "$lib/components/schedule/TimeSlot.svelte";
 	import Sponsors from "$lib/components/Sponsors.svelte";
 
@@ -11,7 +11,7 @@
 	const rooms = allRooms[year]
 
 	const today = new Date();
-	const target = new Date(`${YEAR}-10-16`);
+	const target = new Date(`${CONFERENCE_DATE}, ${YEAR}`);
 
 	const isConDay =
 		today.getFullYear() === target.getFullYear() &&

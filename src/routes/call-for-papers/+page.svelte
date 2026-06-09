@@ -1,7 +1,7 @@
 <script lang="ts">
 	import TagBlock from "$lib/components/core/TagBlock.svelte";
 	import Fly from "$lib/components/fly/Fly.svelte";
-	import { YEAR, DATE } from "$lib/config";
+	import { YEAR, CONFERENCE_DATE, CONFERENCE_DAY, CONFERENCE_VENUE, PAPERS_PROPOSAL_DEADLINE, PAPERS_FORM_URL } from "$lib/config";
 
     import speaker from "$lib/assets/images/Conference speaker-pana.svg?raw";
 </script>
@@ -16,9 +16,9 @@
             <div>
                 <p>Please note:</p>
                 <ul class="list-disc list-inside mt-2">
-                    <li>Proposal deadline: Sunday, August 17, {YEAR} at 23:59 CEST</li>
-                    <li>Conference date: Thursday, {DATE}, {YEAR}</li>
-                    <li>Venue: Jaarbeurs Utrecht, Netherlands</li>
+                    <li>Proposal deadline: {PAPERS_PROPOSAL_DEADLINE}, {YEAR} at 23:59 CEST</li>
+                    <li>Conference date: {CONFERENCE_DAY}, {CONFERENCE_DATE}, {YEAR}</li>
+                    <li>Venue: {CONFERENCE_VENUE}</li>
                 </ul>
             </div>
 
@@ -51,9 +51,9 @@
 
         <div class="mt-4 flex flex-col items-center justify-center">
             <p class="italic text-lg">
-                We hope to see you on stage at PyCon NL {YEAR} on {DATE}, {YEAR}.
+                We hope to see you on stage at PyCon NL {YEAR} on {CONFERENCE_DATE}, {YEAR}.
             </p>
-            <TagBlock class="mt-8 text-lg" backgroundColor="north" link="https://forms.gle/UrVA9YCaDC6WhD3F7" externalLink>
+            <TagBlock class="mt-8 text-lg" backgroundColor="north" link={PAPERS_FORM_URL} externalLink>
                 <div class="font-bold">
                     Call for Papers form<span class="px-2">|</span><span class="text-ordina">PYCON NL</span>
                 </div>

@@ -4,7 +4,7 @@
 	import {
         CONTACT_EMAIL,
         YEAR,
-        DATE,
+        CONFERENCE_DATE,
         PLATINUM_PRICE,
         GOLD_PRICE,
         SILVER_PRICE,
@@ -84,7 +84,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 items-center">
             <Fly offset={-10} duration={1000}>
                 <TagBlock class="float-left max-w-lg" direction="right" extend backgroundColor="north3">
-                    <p>We are excited to invite you to explore our sponsor packages for PyCon NL {YEAR}, taking place on {DATE}, {YEAR}.</p>
+                    <p>We are excited to invite you to explore our sponsor packages for PyCon NL {YEAR}, taking place on {CONFERENCE_DATE}, {YEAR}.</p>
                     <p>Our packages are designed to offer you maximum visibility and engagement with our vibrant community of Python enthusiasts from all over the world.</p>
                 </TagBlock>
             </Fly>
@@ -177,7 +177,7 @@
             <p>Thank you for considering this opportunity. We look forward to the possibility of collaborating with you to make PyCon NL {YEAR} a success!</p>
         </div>
 
-        <!-- TODO: sponsors 2025 toevoegen -->
+        <!-- TODO: add sponsors -->
     </div>
 </div>
 
@@ -201,11 +201,11 @@
         font-weight: bold;
         font-size: 1.2em;
     }
-    /* Om te zorgen dan elke styling correct wordt toegepast op elke cell moeten we de vertical align aangeven */
+    /* Om te zorgen dat elke styling correct wordt toegepast op elke cell moeten we de vertical align aangeven */
     .align-top {
         vertical-align: top;
     }
-    /* Ik wil de tabel altijd volledig in beeld, met font groote dat leesbaar is op elk apparaat. We passen het aan op basis van de view width */
+    /* Ik wil de tabel altijd volledig in beeld, met font grootte dat leesbaar is op elk apparaat. We passen het aan op basis van de view width */
     .responsive-table {
         min-width: 500px;
         width: 100%;

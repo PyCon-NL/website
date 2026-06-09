@@ -1,7 +1,7 @@
 <script lang="ts">
 	import TagBlock from "$lib/components/core/TagBlock.svelte";
 	import Fly from "$lib/components/fly/Fly.svelte";
-	import { YEAR } from "$lib/config";
+	import { YEAR, VOLUNTEERS_FORM_URL } from "$lib/config";
 
     import volunteer from "$lib/assets/images/Hello-pana.svg?raw";
     import organize from "$lib/assets/images/Organizing projects-pana.svg?raw";
@@ -94,7 +94,7 @@
         </div>
 
         <div class="mt-4 flex items-center justify-center">
-            <TagBlock class="text-lg" backgroundColor="north" externalLink>
+            <TagBlock class="text-lg" backgroundColor="north" link={VOLUNTEERS_FORM_URL} externalLink>
                 <div class="font-bold">
                     Fill form<span class="px-2">|</span><span class="text-ordina">PYCON NL Volunteer Program</span>
                 </div>

@@ -1,6 +1,6 @@
 <script>
 	import TagBlock from '$lib/components/core/TagBlock.svelte';
-	import { GITHUB_URL, YEAR, DATE } from '$lib/config';
+	import { GITHUB_URL, YEAR, CONFERENCE_DATE } from '$lib/config';
 </script>
 
 <div
@@ -11,7 +11,7 @@
 
 	<TagBlock class="mt-5 md:mr-28" direction="right" extend backgroundColor="north3">
 		<div class="flex w-screen max-w-xl justify-center md:justify-end text-black">
-			<div class="px-5 text-xl sm:pl-0"><span class="font-bold">When:</span> {DATE}th {YEAR}</div>
+			<div class="px-5 text-xl sm:pl-0"><span class="font-bold">When:</span> {CONFERENCE_DATE}th {YEAR}</div>
 		</div>
 	</TagBlock>
 
