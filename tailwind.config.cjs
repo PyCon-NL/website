@@ -69,6 +69,9 @@ module.exports = {
 				north3: {
 					DEFAULT: '#b1cac5'
 				},
+				north4: {
+					DEFAULT: '#4c1d95'
+				},
 				soprasteria: {
 					DEFAULT: '#89289022',
 					orange: '#FFB15D',
