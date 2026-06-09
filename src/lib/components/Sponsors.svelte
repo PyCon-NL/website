@@ -4,7 +4,7 @@
 
     export let small: boolean = false;
 
-    type Tier = "gold" | "silver" | "bronze"
+    type Tier = "platinum" | "gold" | "silver" | "bronze"
 
     type Sponsor = {
         tier: Tier
@@ -13,13 +13,20 @@
         url?: string
     }
 
-    const colors: Record<Tier, "north" | "north2" | "north3"> = {
+    const colors: Record<Tier, "north4" | "north" | "north2" | "north3"> = {
+        platinum: "north4",
         gold: "north",
         silver: "north2",
         bronze: "north3",
     }
 
     const sponsors: Sponsor[] = [
+        {
+            tier: "platinum",
+            name: "Platinum Placeholder Sponsor",
+            logo: "/sponsors/platinum.png",
+            url: "https://www.platinum-sponsor.com",
+        },
         {
             tier: "silver",
             name: "Vakgroep Software Ontwikkeling",
@@ -60,7 +67,7 @@
 
     const byTier: Partial<Record<Tier, Sponsor[]>> = groupBy(sponsors, s => s.tier);
     const tiers = new Set(sponsors.map(s => s.tier));
-    const sortedTiers: Tier[] = (["gold", "silver", "bronze"] as Tier[]).filter(t => tiers.has(t));
+    const sortedTiers: Tier[] = (["platinum", "gold", "silver", "bronze"] as Tier[]).filter(t => tiers.has(t));
 </script>
 
 {#each sortedTiers as tier}
