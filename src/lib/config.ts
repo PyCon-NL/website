@@ -9,6 +9,9 @@ export const TICKETS_URL = "https://www.eventbrite.nl/e/1388174410029?aff=oddtdt
 export const PAPERS_FORM_URL = "https://forms.gle/UrVA9YCaDC6WhD3F7";
 export const VOLUNTEERS_FORM_URL = "https://forms.gle/placeholder";
 export const GITHUB_URL = 'https://github.com/PyCon-NL/website';
+export const PYNETHERLANDS_URL = 'https://www.pynl.org/';
+export const LINKEDIN_URL = 'https://www.linkedin.com/company/104324288/';
+export const INSTAGRAM_URL = 'https://www.instagram.com/placeholder/url/';
 export const CONTACT_EMAIL = 'info@pycon-nl.org';
 
 // Call for papers and volunteers visibility
