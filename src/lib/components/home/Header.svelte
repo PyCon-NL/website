@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Poster from './Background.svelte';
 	import TagBlock from '$lib/components/core/TagBlock.svelte';
-	import { YEAR, TICKETS_URL } from '$lib/config';
+	import { YEAR, TICKETS_URL, HIDE_CALL_FOR_PAPERS, HIDE_CALL_FOR_VOLUNTEERS } from '$lib/config';
 	import { Icon } from 'svelte-awesome';
 	import { chevronDown } from 'svelte-awesome/icons';
 	import Countdown from './Countdown.svelte';
@@ -20,7 +20,11 @@
 	const speakers = { label: "Speakers", link: "/speakers" };
 	const schedule = { label: "Schedule	", link: "/schedule" };
 
-	const menusLeft: Menu[] = [tickets, papers, volunteers];
+	const menusLeft: Menu[] = [
+		tickets,
+		...(!HIDE_CALL_FOR_PAPERS ? [papers] : []),
+		...(!HIDE_CALL_FOR_VOLUNTEERS ? [volunteers] : []),
+	];
 	const menusRight: Menu[] = [sponsors, speakers, schedule];
 
 	const menuStagger = 4;
