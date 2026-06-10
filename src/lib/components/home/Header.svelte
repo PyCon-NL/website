@@ -20,7 +20,7 @@
 	const speakers = { label: "Speakers", link: "/speakers" };
 	const schedule = { label: "Schedule	", link: "/schedule" };
 
-	const menusLeft: Menu[] = [tickets];
+	const menusLeft: Menu[] = [tickets, papers, volunteers];
 	const menusRight: Menu[] = [sponsors, speakers, schedule];
 
 	const menuStagger = 4;
@@ -34,16 +34,16 @@
 	<div class="relative mt-3 w-full">
 		<div class="menu">
 			<div class="left">
-				<Fly offset={-10}>
-					<TagBlock direction="right" extend backgroundColor="north3">
-						<div class="inline-flex text-lg text-white">
-							<div class="text-xl">
-								<span class="pr-4 text-north2 font-bold">Save the date <span class="whitespace-pre">16-10-{YEAR}</span></span>
-								<Countdown />
+					<Fly offset={-10}>
+						<TagBlock direction="right" extend backgroundColor="north3">
+							<div class="inline-flex text-lg text-white">
+								<div class="text-xl">
+									<span class="pr-4 text-north2 font-bold">Save the date <span class="whitespace-pre">15-10-{YEAR}</span></span>
+									<Countdown />
+								</div>
 							</div>
-						</div>
-					</TagBlock>
-				</Fly>
+						</TagBlock>
+					</Fly>
 				{#each menusLeft as menu, i}
 					<!-- i + 1 because of the Countdown above -->
 					<div style:padding-right="{menuStagger * (i + 1)}em">
