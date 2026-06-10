@@ -30,7 +30,7 @@
             label: "Availability",
             content: [
                 ["Number of available slots"],
-                ["4"],
+                ["2"],
                 ["4"],
                 ["3"],
                 ["3"]
@@ -40,8 +40,8 @@
             label: "Session passes",
             content: [
                 ["Free conference passes", "Exhibitor passes", "Discounted conference passes"],
-                ["6", "5", "6"],
-                ["4", "4", "4"],
+                ["8", "6", "8"],
+                ["5", "4", "6"],
                 ["3", "3", "3"],
                 ["2", "2", "1"]
             ]
@@ -50,6 +50,9 @@
             label: "Brand visibility",
             content: [
                 [
+                    "5-min company spotlight on stage",
+                    "Dedicated pre-event email",
+                    "Featured website section",
                     "Social media announcement",
                     "Mention in opening speech",
                     "Logo on badges",
@@ -60,10 +63,10 @@
                     "Vacancy flyer may be distrubited",
                     "Logo in the PyCon NL digital program guide"
                 ],
-                ["✔", "✔", "✔", "✔", "✔", "✔", "✔", "✔", "✔"],
-                ["✔", "✔", "✔", "✔", "✔", "✔", "✔", "✔", "✔"],
-                ["✔", "", "✔", "✔", "", "✔", "€200 extra", "✔", "✔"],
-                ["✔", "", "", "", "", "✔", "", "", "✔"]
+                ["✔", "✔", "✔", "✔", "✔", "✔", "✔", "✔", "✔", "✔", "✔", "✔"],
+                ["", "", "Logo only", "✔", "✔", "✔", "✔", "✔", "✔", "✔", "✔", "✔"],
+                ["", "", "", "✔", "", "✔", "✔", "", "✔", "€200 extra", "✔", "✔"],
+                ["", "", "", "✔", "", "", "", "", "✔", "", "", "✔"]
             ]
         },
         {
