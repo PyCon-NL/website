@@ -1,6 +1,6 @@
 <script lang="ts">
     import { page } from "$app/stores";
-	import { onMount } from "svelte";
+    import { onMount } from "svelte";
     import { HIDE_CALL_FOR_PAPERS, HIDE_CALL_FOR_VOLUNTEERS } from "$lib/config";
 
     $: currentPath = $page.url.pathname;
@@ -33,7 +33,8 @@
             label: "About Us",
             submenu: [
                 { label: "History", route: "/history" },
-                { label: "Code of Conduct", route: "/code-of-conduct" }
+                { label: "Code of Conduct", route: "/code-of-conduct" },
+                { label: "Members", route: "/members" },
             ]
         },
     ]
@@ -62,7 +63,7 @@
 
         <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
             <button
-                on:click={toggleMenu}
+                onclick={toggleMenu}
                 type="button"
                 class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white white rounded-lg md:hidden hover:text-north2 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
                 aria-controls="navbar-sticky"
@@ -91,7 +92,7 @@
                                             href={sub.route}
                                             class:active={currentPath === sub.route}
                                             class="block rounded py-2 px-3 text-white hover:text-north2 hover:bg-gray-100"
-                                            on:click={() => menuOpen = false}
+                                            onclick={() => menuOpen = false}
                                         >
                                             {sub.label}
                                         </a>
@@ -132,7 +133,7 @@
                                 href={item.route}
                                 class:active={currentPath === item.route}
                                 class="block py-2 px-3 text-white rounded hover:text-north2 hover:bg-gray-100 md:hover:text-white md:hover:bg-transparent md:p-0 md:hover:underline"
-                                on:click={() => menuOpen = false}
+                                onclick={() => menuOpen = false}
                             >
                                 {item.label}
                             </a>
