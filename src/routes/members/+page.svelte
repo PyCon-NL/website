@@ -1,6 +1,11 @@
 <script lang="ts">
     import TagBlock from '$lib/components/core/TagBlock.svelte';
     import Fly from '$lib/components/fly/Fly.svelte';
+    import GlobeIcon from '$lib/components/icons/GlobeIcon.svelte';
+    import LinkedInIcon from '$lib/components/icons/LinkedInIcon.svelte';
+    import InstagramIcon from '$lib/components/icons/InstagramIcon.svelte';
+    import GitHubIcon from '$lib/components/icons/GitHubIcon.svelte';
+    import MastodonIcon from '$lib/components/icons/MastodonIcon.svelte';
     import {
         GITHUB_URL,
         PYNETHERLANDS_URL,
@@ -118,8 +123,7 @@
                 <Fly offset={-10} duration={1000}>
                     <TagBlock backgroundColor="north" link={PYNETHERLANDS_URL} externalLink>
                         <div class="flex items-center gap-3 font-bold">
-                            <!-- placeholder: website icon -->
-                            <span class="inline-block w-6 h-6 bg-white opacity-50 rounded"></span>
+                            <GlobeIcon class="w-6 h-6" />
                             PyNetherlands Website
                         </div>
                     </TagBlock>
@@ -128,8 +132,7 @@
                 <Fly offset={-10} duration={1000} delay={100}>
                     <TagBlock backgroundColor="north2" link={LINKEDIN_URL} externalLink>
                         <div class="flex items-center gap-3 font-bold">
-                            <!-- placeholder: linkedin icon -->
-                            <span class="inline-block w-6 h-6 bg-white opacity-50 rounded"></span>
+                            <LinkedInIcon class="w-6 h-6" />
                             LinkedIn
                         </div>
                     </TagBlock>
@@ -138,8 +141,7 @@
                 <Fly offset={-10} duration={1000} delay={200}>
                     <TagBlock backgroundColor="north3" link={INSTAGRAM_URL} externalLink>
                         <div class="flex items-center gap-3 font-bold">
-                            <!-- placeholder: instagram icon -->
-                            <span class="inline-block w-6 h-6 bg-shark opacity-50 rounded"></span>
+                            <InstagramIcon class="w-6 h-6" />
                             Instagram
                         </div>
                     </TagBlock>
@@ -148,8 +150,7 @@
                 <Fly offset={-10} duration={1000} delay={300}>
                     <TagBlock backgroundColor="north" link={GITHUB_URL} externalLink>
                         <div class="flex items-center gap-3 font-bold">
-                            <!-- placeholder: github icon -->
-                            <span class="inline-block w-6 h-6 bg-white opacity-50 rounded"></span>
+                            <GitHubIcon class="w-6 h-6" />
                             GitHub
                         </div>
                     </TagBlock>
@@ -158,8 +159,7 @@
                 <Fly offset={-10} duration={1000} delay={400}>
                     <TagBlock backgroundColor="north2" link={MASTODON_URL} externalLink>
                         <div class="flex items-center gap-3 font-bold">
-                            <!-- placeholder: mastodon icon -->
-                            <span class="inline-block w-6 h-6 bg-white opacity-50 rounded"></span>
+                            <MastodonIcon class="w-6 h-6" />
                             Mastodon
                         </div>
                     </TagBlock>
