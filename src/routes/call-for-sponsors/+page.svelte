@@ -165,7 +165,7 @@
         </div>
 
         <address class="italic mt-4">
-            <a href="mailto:{CONTACT_EMAIL}">{CONTACT_EMAIL}</a><br />
+            {CONTACT_EMAIL}<br />
         </address>
 
         <div class="mt-4 flex items-center justify-center">
