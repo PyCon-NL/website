@@ -38,22 +38,6 @@
 		</div>
 	</TagBlock>
 
-	<!-- <div class="mt-10 text-xl">Limited places available, so hurry up!</div> -->
-
-	<!-- <a
-		class="mt-5 inline"
-		target="_blank"
-		rel="noreferrer"
-		href="https://www.eventbrite.nl/e/tickets-python-conference-utrecht-715964698687"
-	>
-		<TagBlock class="text-center text-xl">
-			<div class="flex flex-col">
-				<div>tickets.get_yours_for_<span class="font-bold">free</span>()</div>
-				<div class="text-xs italic">Registration ends October 8th 23:59</div>
-			</div>
-		</TagBlock>
-	</a> -->
-
 	<div class="mt-16 flex flex-col gap-4 lg:block">
 		<span class="text-sm mt-12 w-full text-center">
     		Made with Svelte
