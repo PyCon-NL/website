@@ -152,7 +152,7 @@
         </div>
 
         <div class="mt-4 flex items-center justify-center">
-            <TagBlock class="text-lg" backgroundColor="north" link="/PYCON NL Sponsorship brochure.pdf" externalLink>
+            <TagBlock class="text-lg" backgroundColor="north" link="/PYCON NL Sponsorship brochure 2026 DRAFT.pdf" externalLink>
                 <div class="font-bold">
                     Download<span class="px-2">|</span><span class="text-ordina">PYCON NL Sponsorship brochure</span>
                 </div>
