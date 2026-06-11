@@ -11,6 +11,7 @@ export const PAPERS_FORM_URL = 'https://www.youtube.com/shorts/Ay8lynMZ4mE';
 export const VOLUNTEERS_FORM_URL = "https://www.youtube.com/shorts/Ay8lynMZ4mE";
 export const GITHUB_URL = 'https://github.com/PyCon-NL/website';
 export const PYNETHERLANDS_URL = 'https://www.pynl.org/';
+export const CODE_OF_CONDUCT_URL = 'https://www.pynl.org/code-of-conduct/';
 export const LINKEDIN_URL = 'https://www.linkedin.com/company/104324288/';
 export const INSTAGRAM_URL = 'https://www.youtube.com/shorts/Ay8lynMZ4mE';
 export const CONTACT_EMAIL = 'info@pycon-nl.org';

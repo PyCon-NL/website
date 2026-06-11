@@ -1,7 +1,7 @@
 <script lang="ts">
     import { page } from "$app/stores";
     import { onMount } from "svelte";
-    import { HIDE_CALL_FOR_PAPERS, HIDE_CALL_FOR_VOLUNTEERS } from "$lib/config";
+    import { CODE_OF_CONDUCT_URL, HIDE_CALL_FOR_PAPERS, HIDE_CALL_FOR_VOLUNTEERS } from "$lib/config";
 
     $: currentPath = $page.url.pathname;
 
@@ -33,7 +33,7 @@
             label: "About Us",
             submenu: [
                 { label: "History", route: "/history" },
-                { label: "Code of Conduct", route: "/code-of-conduct" },
+                { label: "Code of Conduct", route: CODE_OF_CONDUCT_URL },
                 { label: "Members", route: "/members" },
             ]
         },
