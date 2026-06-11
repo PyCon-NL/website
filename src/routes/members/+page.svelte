@@ -6,6 +6,7 @@
         PYNETHERLANDS_URL,
         LINKEDIN_URL,
         INSTAGRAM_URL,
+        MASTODON_URL,
         CONTACT_EMAIL,
     } from '$lib/config';
 
@@ -150,6 +151,16 @@
                             <!-- placeholder: github icon -->
                             <span class="inline-block w-6 h-6 bg-white opacity-50 rounded"></span>
                             GitHub
+                        </div>
+                    </TagBlock>
+                </Fly>
+
+                <Fly offset={-10} duration={1000} delay={400}>
+                    <TagBlock backgroundColor="north2" link={MASTODON_URL} externalLink>
+                        <div class="flex items-center gap-3 font-bold">
+                            <!-- placeholder: mastodon icon -->
+                            <span class="inline-block w-6 h-6 bg-white opacity-50 rounded"></span>
+                            Mastodon
                         </div>
                     </TagBlock>
                 </Fly>
