@@ -17,9 +17,17 @@ export const INSTAGRAM_URL = '/coming-soon';
 export const MASTODON_URL = 'https://mastodon.social/@pycon_nl';
 export const CONTACT_EMAIL = 'info@pycon-nl.org';
 
-// Call for papers and volunteers visibility
+// Call for papers and volunteers visibility (hides the item from the nav entirely)
 export const HIDE_CALL_FOR_PAPERS = false;
 export const HIDE_CALL_FOR_VOLUNTEERS = false;
+
+// Call for papers and volunteers page status. Controls what the page renders:
+//   "coming-soon" -> shared "Coming soon!" holding page
+//   "open"        -> the actual page, with the form link active
+//   "closed"      -> the after-deadline page
+export type CallStatus = "coming-soon" | "open" | "closed";
+export const CALL_FOR_PAPERS_STATUS: CallStatus = "coming-soon";
+export const CALL_FOR_VOLUNTEERS_STATUS: CallStatus = "coming-soon";
 
 // Sponsor pricing information
 export const PLATINUM_PRICE = "€9,000.00";

@@ -31,16 +31,16 @@
             content: [
                 ["Number of available slots"],
                 ["2"],
-                ["4"],
                 ["3"],
-                ["3"]
+                ["4"],
+                ["4"]
             ]
         },
         {
             label: "Session passes",
             content: [
                 ["Free conference passes", "Exhibitor passes", "Discounted conference passes"],
-                ["8", "6", "8"],
+                ["7", "5", "8"],
                 ["5", "4", "6"],
                 ["3", "3", "3"],
                 ["2", "2", "1"]
@@ -50,13 +50,13 @@
             label: "Brand visibility",
             content: [
                 [
-                    "5-min company spotlight on stage",
+                    "Prominent screen presence",
                     "Dedicated pre-event email",
-                    "Featured website section",
+                    "Logo on the conference T-shirt",
                     "Social media announcement",
                     "Mention in opening speech",
                     "Logo on badges",
-                    "Logo on PyCon NL video",
+                    "Logo on PyCon NL after video",
                     "Logo on PyCon NL banners",
                     "Logo on PyCon NL website",
                     "Option to distribute goodies at the event",
@@ -64,7 +64,7 @@
                     "Logo in the PyCon NL digital program guide"
                 ],
                 ["✔", "✔", "✔", "✔", "✔", "✔", "✔", "✔", "✔", "✔", "✔", "✔"],
-                ["", "", "Logo only", "✔", "✔", "✔", "✔", "✔", "✔", "✔", "✔", "✔"],
+                ["", "", "✔", "✔", "✔", "✔", "✔", "", "✔", "✔", "✔", "✔"],
                 ["", "", "", "✔", "", "✔", "✔", "", "✔", "€200 extra", "✔", "✔"],
                 ["", "", "", "✔", "", "", "", "", "✔", "", "", "✔"]
             ]
@@ -73,10 +73,10 @@
             label: "Booths",
             content: [
                 ["Power & Wi-Fi", "Premier booth location", "Booth dimensions"],
-                ["✔", "✔", "4 × 3 (12m&sup2;)"],
-                ["✔", "✔", "3 × 2.5 (7.5m&sup2;)"],
-                ["✔", "", "2 × 2 (4m&sup2;)"],
-                ["✔", "", "Table"]
+                ["✔", "✔", "4 × 2.5 (10m&sup2;)"],
+                ["✔", "✔", "3 × 2 (6m&sup2;)"],
+                ["✔", "", "2 × 1.5 (3m&sup2;)"],
+                ["✔", "", "Shared Table"]
             ]
         }
     ];
@@ -104,7 +104,7 @@
             <div class="grid gap-4">
                 <TagBlock extend direction="both" backgroundColor="north4">
                     <h3 class="font-bold text-xl">Platinum Package</h3>
-                    <p>WIP: The Platinum Package is our most exclusive tier, offering unparalleled visibility and premier access for our top-tier sponsors. Platinum sponsors receive prime booth placement, logo features across all conference materials and videos, a dedicated social media campaign, and prominent mentions throughout the event.</p>
+                    <p>The Platinum Package is our most exclusive tier, offering unparalleled visibility and premier access for our top-tier sponsors. Platinum sponsors receive prime booth placement, logo features across all conference materials and videos, a dedicated social media campaign, and prominent mentions throughout the event.</p>
                 </TagBlock>
                 <TagBlock extend direction="both" backgroundColor="north">
                     <h3 class="font-bold text-xl">Gold Package</h3>
@@ -152,7 +152,7 @@
         </div>
 
         <div class="mt-4 flex items-center justify-center">
-            <TagBlock class="text-lg" backgroundColor="north" link="/PYCON NL Sponsorship brochure 2026 DRAFT.pdf" externalLink>
+            <TagBlock class="text-lg" backgroundColor="north" link="/PYCON NL Sponsorship brochure 2026.pdf" externalLink>
                 <div class="font-bold">
                     Download<span class="px-2">|</span><span class="text-ordina">PYCON NL Sponsorship brochure</span>
                 </div>

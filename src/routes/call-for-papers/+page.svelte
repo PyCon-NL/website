@@ -1,11 +1,32 @@
 <script lang="ts">
 	import TagBlock from "$lib/components/core/TagBlock.svelte";
 	import Fly from "$lib/components/fly/Fly.svelte";
-	import { YEAR, CONFERENCE_DATE, CONFERENCE_DAY, CONFERENCE_VENUE, PAPERS_PROPOSAL_DEADLINE, PAPERS_FORM_URL } from "$lib/config";
+	import { YEAR, CONFERENCE_DATE, CONFERENCE_DAY, CONFERENCE_VENUE, PAPERS_PROPOSAL_DEADLINE, PAPERS_FORM_URL, CALL_FOR_PAPERS_STATUS } from "$lib/config";
+	import ComingSoon from "../coming-soon/+page.svelte";
 
     import speaker from "$lib/assets/images/Conference speaker-pana.svg?raw";
 </script>
 
+{#if CALL_FOR_PAPERS_STATUS === "coming-soon"}
+<ComingSoon />
+{:else if CALL_FOR_PAPERS_STATUS === "closed"}
+<div class="m-8 mt-20 py-6">
+	<div class="m-auto w-full max-w-6xl text-black">
+		<div class="w-full my-8 text-2xl flex justify-center text-center font-bold">
+			<div class="max-w-2xl">
+				The call for papers is now closed. Thank you to everyone who submitted a proposal for PyCon NL {YEAR}!
+			</div>
+		</div>
+		<div class="mt-4 flex items-center justify-center">
+			<Fly offset={10} duration={1000}>
+				<TagBlock class="text-lg" backgroundColor="north" link="/">
+					<div class="font-bold">Back to home</div>
+				</TagBlock>
+			</Fly>
+		</div>
+	</div>
+</div>
+{:else}
 <div class="m-8 mt-20 py-6">
 	<div class="m-auto w-full max-w-6xl text-black">
 
@@ -62,3 +83,4 @@
 
     </div>
 </div>
+{/if}
