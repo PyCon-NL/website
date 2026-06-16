@@ -43,15 +43,15 @@ jobs:
           touch build/.nojekyll
         #     CI: false # true -> fails on warning
 
-      - name: Download versions from 2025
+      - name: Download versions from 2026
         uses: robinraju/release-downloader@v1
         with:
-          tag: '2025'
+          tag: '2026'
           fileName: 'dist.tar.gz'
-      - name: Extract versions from 2025
+      - name: Extract versions from 2026
         run: |
-          mkdir -p build/2025
-          tar -xvf dist.tar.gz --directory build/2025
+          mkdir -p build/2026
+          tar -xvf dist.tar.gz --directory build/2026
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
