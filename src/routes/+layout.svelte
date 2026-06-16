@@ -4,6 +4,7 @@
 
 	import Footer from "$lib/footer/Footer.svelte";
 	import TopNavSection from "$lib/components/nav/Nav.svelte";
+	import { YEAR } from "$lib/config";
 
  	import { afterNavigate } from '$app/navigation';
 
@@ -15,10 +16,10 @@
 </script>
 
 <svelte:head>
-	<title>PyCon NL 2025</title>
+	<title>PyCon NL {YEAR}</title>
 
-	<meta name="title" property="og:title" content="PyCon NL 2025" />
-	<meta name="description" property="og:description" content="PyCon NL 2025" />
+	<meta name="title" property="og:title" content="PyCon NL {YEAR}" />
+	<meta name="description" property="og:description" content="PyCon NL {YEAR}" />
 	<meta name="type" property="og:type" content="website" />
 	<meta name="url" property="og:url" content="https://pycon-nl.org/" />
 	<meta

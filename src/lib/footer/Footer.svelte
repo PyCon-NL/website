@@ -1,5 +1,9 @@
 <script>
 	import TagBlock from '$lib/components/core/TagBlock.svelte';
+	import InstagramIcon from '$lib/components/icons/InstagramIcon.svelte';
+	import MastodonIcon from '$lib/components/icons/MastodonIcon.svelte';
+	import LinkedInIcon from '$lib/components/icons/LinkedInIcon.svelte';
+	import { GITHUB_URL, YEAR, CONFERENCE_DATE, INSTAGRAM_URL, MASTODON_URL, LINKEDIN_URL } from '$lib/config';
 </script>
 
 <div
@@ -10,7 +14,7 @@
 
 	<TagBlock class="mt-5 md:mr-28" direction="right" extend backgroundColor="north3">
 		<div class="flex w-screen max-w-xl justify-center md:justify-end text-black">
-			<div class="px-5 text-xl sm:pl-0"><span class="font-bold">When:</span> October 16th 2025</div>
+			<div class="px-5 text-xl sm:pl-0"><span class="font-bold">When:</span> {CONFERENCE_DATE}th {YEAR}</div>
 		</div>
 	</TagBlock>
 
@@ -25,7 +29,7 @@
 					/></a
 				>
 				<div class="flex flex-col text-center md:text-right">
-					<div class="text-xl"><span class="font-bold">Where:</span> Supernova<br>(Jaarbeurs Utrecht)</div>
+					<div class="text-xl"><span class="font-bold">Where:</span> Jaarbeurs Utrecht</div>
 					<div class="text-lg mt-4">Jaarbeursplein 6</div>
 					<div class="text-lg">3521 AL Utrecht</div>
 					<div class="text-lg">The Netherlands</div>
@@ -37,21 +41,38 @@
 		</div>
 	</TagBlock>
 
-	<!-- <div class="mt-10 text-xl">Limited places available, so hurry up!</div> -->
-
-	<!-- <a
-		class="mt-5 inline"
-		target="_blank"
-		rel="noreferrer"
-		href="https://www.eventbrite.nl/e/tickets-python-conference-utrecht-715964698687"
-	>
-		<TagBlock class="text-center text-xl">
-			<div class="flex flex-col">
-				<div>tickets.get_yours_for_<span class="font-bold">free</span>()</div>
-				<div class="text-xs italic">Registration ends October 8th 23:59</div>
-			</div>
-		</TagBlock>
-	</a> -->
+	<TagBlock class="mt-8 md:mr-28" direction="right" extend backgroundColor="north3">
+		<div class="flex w-screen max-w-xl items-center justify-center gap-5 md:justify-end text-black">
+			<span class="text-xl font-bold">Follow us:</span>
+			<a
+				target="_blank"
+				rel="noreferrer"
+				href={INSTAGRAM_URL}
+				aria-label="Instagram"
+				class="scale-[95%] transition-all hover:scale-[105%]"
+			>
+				<InstagramIcon class="h-7 w-7" />
+			</a>
+			<a
+				target="_blank"
+				rel="noreferrer"
+				href={MASTODON_URL}
+				aria-label="Mastodon"
+				class="scale-[95%] transition-all hover:scale-[105%]"
+			>
+				<MastodonIcon class="h-7 w-7" />
+			</a>
+			<a
+				target="_blank"
+				rel="noreferrer"
+				href={LINKEDIN_URL}
+				aria-label="LinkedIn"
+				class="scale-[95%] transition-all hover:scale-[105%]"
+			>
+				<LinkedInIcon class="h-7 w-7" />
+			</a>
+		</div>
+	</TagBlock>
 
 	<div class="mt-16 flex flex-col gap-4 lg:block">
 		<span class="text-sm mt-12 w-full text-center">
@@ -61,7 +82,7 @@
 		<TagBlock
 			class="mx-8"
 			backgroundColor="north3" small
-			link="https://github.com/Ordina-Group/pythonconferentie.nl"
+			link={GITHUB_URL}
 			externalLink
 		>
 			Source on GitHub

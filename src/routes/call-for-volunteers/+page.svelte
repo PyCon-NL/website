@@ -1,12 +1,17 @@
 <script lang="ts">
 	import TagBlock from "$lib/components/core/TagBlock.svelte";
 	import Fly from "$lib/components/fly/Fly.svelte";
+	import { YEAR, VOLUNTEERS_FORM_URL, CALL_FOR_VOLUNTEERS_STATUS } from "$lib/config";
+	import ComingSoon from "../coming-soon/+page.svelte";
 
     import volunteer from "$lib/assets/images/Hello-pana.svg?raw";
     import organize from "$lib/assets/images/Organizing projects-pana.svg?raw";
     import ambassador from "$lib/assets/images/Ambassador-pana.svg?raw";
 </script>
 
+{#if CALL_FOR_VOLUNTEERS_STATUS === "coming-soon"}
+<ComingSoon />
+{:else if CALL_FOR_VOLUNTEERS_STATUS === "closed"}
 <div class="m-8 mt-20 py-6">
     <div class="m-auto w-full max-w-6xl text-black">
         <div class="w-full my-8 text-2xl flex justify-center text-center font-bold">
@@ -14,9 +19,21 @@
                 The volunteer sign up sheet is now closed, we thank everyone who signed up to become a volunteer!
             </div>
         </div>
+        <div class="mt-4 flex items-center justify-center">
+            <Fly offset={10} duration={1000}>
+                <TagBlock class="text-lg" backgroundColor="north" link="/">
+                    <div class="font-bold">Back to home</div>
+                </TagBlock>
+            </Fly>
+        </div>
+    </div>
+</div>
+{:else}
+<div class="m-8 mt-20 py-6">
+    <div class="m-auto w-full max-w-6xl text-black">
         <div class="w-full text-center font-bold text-xl">
             <TagBlock backgroundColor="north3">
-                Want to help make PyCon NL 2025 an unforgettable event?
+                Want to help make PyCon NL {YEAR} an unforgettable event?
             </TagBlock>
         </div>
 
@@ -93,7 +110,7 @@
         </div>
 
         <div class="mt-4 flex items-center justify-center">
-            <TagBlock class="text-lg" backgroundColor="north" externalLink>
+            <TagBlock class="text-lg" backgroundColor="north" link={VOLUNTEERS_FORM_URL} externalLink>
                 <div class="font-bold">
                     Fill form<span class="px-2">|</span><span class="text-ordina">PYCON NL Volunteer Program</span>
                 </div>
@@ -102,6 +119,7 @@
 
     </div>
 </div>
+{/if}
 
 <style>
     .top-image > :global(svg) {

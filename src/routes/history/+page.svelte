@@ -15,7 +15,7 @@
         <div>
             <Fly offset={10} duration={1000}>
                 <TagBlock class="max-w-lg" direction="left" extend backgroundColor="north2">
-                    <p>What began as a small meet-up in 2019 with just 40 attendees quickly evolved into something much bigger.</p>
+                    <p>What began as a small meet-up in 2019 with just 40 attendees, quickly evolved into something much bigger.</p>
                 </TagBlock>
             </Fly>
 
@@ -27,13 +27,19 @@
 
             <Fly offset={10} duration={1000} delay={400}>
                 <TagBlock class="mt-4 ml-12 max-w-lg" direction="left" extend backgroundColor="north2">
-                    <p>In 2024, the organizing team took a major step forward by applying to the Python Software Foundation to officially host PyCon Netherlands.</p>
+                    <p>In 2024, the organizing team took a major step forward by applying to the Python Software Foundation to officially host PyCon NL.</p>
                 </TagBlock>
             </Fly>
 
             <Fly offset={10} duration={1000} delay={600}>
                 <TagBlock class="mt-4 ml-20 max-w-lg" direction="left" extend backgroundColor="north3">
-                    <p>We're now proud to say that on October 10th, 2024, we successfully hosted the very first PyCon NL!</p>
+                    <p>On October 10th, 2024, we proudly hosted the very first PyCon NL. A milestone moment for the Dutch Python community.</p>
+                </TagBlock>
+            </Fly>
+
+            <Fly offset={10} duration={1000} delay={800}>
+                <TagBlock class="mt-4 ml-32 max-w-lg" direction="left" extend backgroundColor="north2">
+                    <p>Eventually, in 2026, PyCon NL became fully community-driven under the newly founded PyNetherlands foundation.</p>
                 </TagBlock>
             </Fly>
         </div>

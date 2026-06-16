@@ -1,35 +1,47 @@
 <script lang="ts">
     import TagBlock from '$lib/components/core/TagBlock.svelte';
 	import Fly from "$lib/components/fly/Fly.svelte";
+	import {
+        CONTACT_EMAIL,
+        YEAR,
+        CONFERENCE_DATE,
+        PLATINUM_PRICE,
+        GOLD_PRICE,
+        SILVER_PRICE,
+        BRONZE_PRICE
+    } from '$lib/config';
     import sponsors from "$lib/assets/images/Sponsor-pana.svg?raw";
     import tiers from "$lib/assets/images/Holding the arrow-pana.svg?raw";
 
-    const headers = ["", "Gold", "Silver", "Bronze"];
+    const headers = ["", "Platinum", "Gold", "Silver", "Bronze"];
 
     const tableRows = [
         {
             label: "Pricing",
             content: [
                 ["Package price (excluding VAT)"],
-                ["€4,000.00"],
-                ["€2,500.00"],
-                ["€1,000.00"]
+                [PLATINUM_PRICE],
+                [GOLD_PRICE],
+                [SILVER_PRICE],
+                [BRONZE_PRICE]
             ]
         },
         {
             label: "Availability",
             content: [
                 ["Number of available slots"],
-                ["4"],
+                ["2"],
                 ["3"],
-                ["3"]
+                ["4"],
+                ["4"]
             ]
         },
         {
             label: "Session passes",
             content: [
                 ["Free conference passes", "Exhibitor passes", "Discounted conference passes"],
-                ["6", "4", "6"],
+                ["7", "5", "8"],
+                ["5", "4", "6"],
                 ["3", "3", "3"],
                 ["2", "2", "1"]
             ]
@@ -38,28 +50,33 @@
             label: "Brand visibility",
             content: [
                 [
+                    "Prominent screen presence",
+                    "Dedicated pre-event email",
+                    "Logo on the conference T-shirt",
                     "Social media announcement",
                     "Mention in opening speech",
                     "Logo on badges",
-                    "Logo on PyConNL video",
-                    "Logo on PyConNL banners",
-                    "Logo on PyConNL website",
+                    "Logo on PyCon NL after video",
+                    "Logo on PyCon NL banners",
+                    "Logo on PyCon NL website",
                     "Option to distribute goodies at the event",
                     "Vacancy flyer may be distrubited",
-                    "Logo in the PyConNL digital program guide"
+                    "Logo in the PyCon NL digital program guide"
                 ],
-                ["✔", "✔", "✔", "✔", "✔", "✔", "✔", "✔", "✔"],
-                ["✔", "", "✔", "✔", "", "✔", "€200 extra", "✔", "✔"],
-                ["✔", "", "", "", "", "✔", "", "", "✔"]
+                ["✔", "✔", "✔", "✔", "✔", "✔", "✔", "✔", "✔", "✔", "✔", "✔"],
+                ["", "", "✔", "✔", "✔", "✔", "✔", "", "✔", "✔", "✔", "✔"],
+                ["", "", "", "✔", "", "✔", "✔", "", "✔", "€200 extra", "✔", "✔"],
+                ["", "", "", "✔", "", "", "", "", "✔", "", "", "✔"]
             ]
         },
         {
             label: "Booths",
             content: [
                 ["Power & Wi-Fi", "Premier booth location", "Booth dimensions"],
-                ["✔", "✔", "3 × 2.5 (10m&sup2;)"],
-                ["✔", "", "2 × 2 (4m&sup2;)"],
-                ["✔", "", "Table"]
+                ["✔", "✔", "4 × 2.5 (10m&sup2;)"],
+                ["✔", "✔", "3 × 2 (6m&sup2;)"],
+                ["✔", "", "2 × 1.5 (3m&sup2;)"],
+                ["✔", "", "Shared Table"]
             ]
         }
     ];
@@ -70,7 +87,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 items-center">
             <Fly offset={-10} duration={1000}>
                 <TagBlock class="float-left max-w-lg" direction="right" extend backgroundColor="north3">
-                    <p>We are excited to invite you to explore our sponsor packages for PyCon NL 2025, taking place on October 16, 2025.</p>
+                    <p>We are excited to invite you to explore our sponsor packages for PyCon NL {YEAR}, taking place on {CONFERENCE_DATE}, {YEAR}.</p>
                     <p>Our packages are designed to offer you maximum visibility and engagement with our vibrant community of Python enthusiasts from all over the world.</p>
                 </TagBlock>
             </Fly>
@@ -85,6 +102,10 @@
 
         <div class="mt-8 max-w-3xl">
             <div class="grid gap-4">
+                <TagBlock extend direction="both" backgroundColor="north4">
+                    <h3 class="font-bold text-xl">Platinum Package</h3>
+                    <p>The Platinum Package is our most exclusive tier, offering unparalleled visibility and premier access for our top-tier sponsors. Platinum sponsors receive prime booth placement, logo features across all conference materials and videos, a dedicated social media campaign, and prominent mentions throughout the event.</p>
+                </TagBlock>
                 <TagBlock extend direction="both" backgroundColor="north">
                     <h3 class="font-bold text-xl">Gold Package</h3>
                     <p>The Gold Package provides substantial visibility with logo placements, mentions in email newsletters, and social media promotions and the opening speech. Gold sponsors will also have 6 conference passes, and will be able to network directly with attendees via their networking table.</p>
@@ -131,7 +152,7 @@
         </div>
 
         <div class="mt-4 flex items-center justify-center">
-            <TagBlock class="text-lg" backgroundColor="north" link="/PYCON NL Sponsorship brochure.pdf" externalLink>
+            <TagBlock class="text-lg" backgroundColor="north" link="/PYCON NL Sponsorship brochure 2026.pdf" externalLink>
                 <div class="font-bold">
                     Download<span class="px-2">|</span><span class="text-ordina">PYCON NL Sponsorship brochure</span>
                 </div>
@@ -140,17 +161,15 @@
 
         <div class="mt-20 max-w-4xl">
             <p>We would be delighted to discuss which package best aligns with your marketing and engagement goals. Please let us know if you have any specific requests or ideas for recognition that would make this partnership even more valuable for you.</p>
-            <p class="mt-[1em]">If you are interested in participating or have any questions, please get in touch with:</p>
+            <p class="mt-[1em]">If you are interested in participating or have any questions, please get in touch with us:</p>
         </div>
 
         <address class="italic mt-4">
-            <p>Eva Munscher</p>
-            <p>Esther Roghair</p>
-            <a href="mailto:pycon.netherlands@gmail.com">pycon.netherlands@gmail.com</a><br />
+            {CONTACT_EMAIL}<br />
         </address>
 
         <div class="mt-4 flex items-center justify-center">
-            <TagBlock class="text-lg" backgroundColor="north" link="mailto:pycon.netherlands@gmail.com" externalLink>
+            <TagBlock class="text-lg" backgroundColor="north" link="mailto:{CONTACT_EMAIL}" externalLink>
                 <div class="font-bold">
                     Contact<span class="px-2">|</span><span class="text-ordina">Get in contact about sponsorship!</span>
                 </div>
@@ -158,10 +177,10 @@
         </div>
 
         <div class="mt-20 max-w-4xl">
-            <p>Thank you for considering this opportunity. We look forward to the possibility of collaborating with you to make PyCon NL 2025 a success!</p>
+            <p>Thank you for considering this opportunity. We look forward to the possibility of collaborating with you to make PyCon NL {YEAR} a success!</p>
         </div>
 
-        <!-- TODO: sponsors 2025 toevoegen -->
+        <!-- TODO: add sponsors -->
     </div>
 </div>
 
@@ -185,15 +204,15 @@
         font-weight: bold;
         font-size: 1.2em;
     }
-    /* Om te zorgen dan elke styling correct wordt toegepast op elke cell moeten we de vertical align aangeven */
+    /* Om te zorgen dat elke styling correct wordt toegepast op elke cell moeten we de vertical align aangeven */
     .align-top {
         vertical-align: top;
     }
-    /* Ik wil de tabel altijd volledig in beeld, met font groote dat leesbaar is op elk apparaat. We passen het aan op basis van de view width */
+    /* Ik wil de tabel altijd volledig in beeld, met font grootte dat leesbaar is op elk apparaat. We passen het aan op basis van de view width */
     .responsive-table {
         min-width: 500px;
         width: 100%;
-        font-size: calc(0.2rem + 1vw);
+        font-size: clamp(0.75rem, 0.2rem + 1vw, 1rem);
     }
     .responsive-table td,
     .responsive-table th {

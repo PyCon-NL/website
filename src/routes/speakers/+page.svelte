@@ -5,8 +5,10 @@
     import PosterizedImage from "$lib/components/PosterizedImage.svelte";
 	import tiler from '$lib/assets/images/tiler-pana.svg?raw';
 
-    import { speakers } from "$lib/data/speakers";
+    import { speakers as allSpeakers } from "$lib/data/speakers";
 	import { initials, type Speaker } from "$lib/data/types";
+	import { yearData } from "$lib/data/registry";
+	import { YEAR } from "$lib/config";
 
     function shuffled<T>(ts: T[]) {
         return ts.map(value => ({ value, sort: Math.random() }))
@@ -17,7 +19,7 @@
     let shuffledSpeakers: Speaker[] = []
 
     onMount(() => {
-        shuffledSpeakers = shuffled(speakers.filter(s => s.years.includes(2025)))
+        shuffledSpeakers = shuffled(yearData[YEAR].speakers)
     })
 
     const tiles = ["01.png", "02.png"]
@@ -85,7 +87,12 @@
                 </div> -->
             {/each}
 
-            {#if shuffledSpeakers.length > 0}
+            {#if shuffledSpeakers.length === 0}
+                <div class="col-span-full flex flex-col items-center gap-4 py-20 text-center">
+                    <div class="text-2xl font-bold">Speakers coming soon</div>
+                    <div class="italic text-lg">Stay tuned — we'll announce our {YEAR} speakers shortly.</div>
+                </div>
+            {:else}
                 <div>
                     {@html tiler}
                 </div>

@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Poster from './Background.svelte';
 	import TagBlock from '$lib/components/core/TagBlock.svelte';
+	import { YEAR, TICKETS_URL, HIDE_CALL_FOR_PAPERS, HIDE_CALL_FOR_VOLUNTEERS } from '$lib/config';
 	import { Icon } from 'svelte-awesome';
 	import { chevronDown } from 'svelte-awesome/icons';
 	import Countdown from './Countdown.svelte';
@@ -12,14 +13,18 @@
 		disabled?: boolean
 	}
 
-	const tickets = { label: "Ticket Shop", link: "https://www.eventbrite.nl/e/1388174410029?aff=oddtdtcreator" };
+	const tickets = { label: "Ticket Shop", link: TICKETS_URL };
 	const sponsors = { label: "Call for Sponsors", link: "/call-for-sponsors" };
 	const volunteers = { label: "Call for Volunteers", link: "/call-for-volunteers" };
 	const papers = { label: "Call for Papers", link: "/call-for-papers" };
 	const speakers = { label: "Speakers", link: "/speakers" };
 	const schedule = { label: "Schedule	", link: "/schedule" };
 
-	const menusLeft: Menu[] = [tickets];
+	const menusLeft: Menu[] = [
+		tickets,
+		...(!HIDE_CALL_FOR_PAPERS ? [papers] : []),
+		...(!HIDE_CALL_FOR_VOLUNTEERS ? [volunteers] : []),
+	];
 	const menusRight: Menu[] = [sponsors, speakers, schedule];
 
 	const menuStagger = 4;
@@ -33,16 +38,16 @@
 	<div class="relative mt-3 w-full">
 		<div class="menu">
 			<div class="left">
-				<Fly offset={-10}>
-					<TagBlock direction="right" extend backgroundColor="north3">
-						<div class="inline-flex text-lg text-white">
-							<div class="text-xl">
-								<span class="pr-4 text-north2 font-bold">Save the date <span class="whitespace-pre">16-10-2025</span></span>
-								<Countdown />
+					<Fly offset={-10}>
+						<TagBlock direction="right" extend backgroundColor="north3">
+							<div class="inline-flex text-lg text-white">
+								<div class="text-xl">
+									<span class="pr-4 text-north2 font-bold">Save the date <span class="whitespace-pre">15-10-{YEAR}</span></span>
+									<Countdown />
+								</div>
 							</div>
-						</div>
-					</TagBlock>
-				</Fly>
+						</TagBlock>
+					</Fly>
 				{#each menusLeft as menu, i}
 					<!-- i + 1 because of the Countdown above -->
 					<div style:padding-right="{menuStagger * (i + 1)}em">
@@ -89,7 +94,7 @@
 				backgroundColor="north"
 			>
 				<div class="text-3xl font-bold cursor-default">
-					PYCON NL<span class="px-4">|</span><span class="pr-4 text-ordina">2025</span>
+					PYCON NL<span class="px-4">|</span><span class="pr-4 text-ordina">{YEAR}</span>
 				</div>
 			</TagBlock>
 		</div>

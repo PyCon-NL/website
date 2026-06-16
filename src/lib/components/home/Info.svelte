@@ -2,6 +2,7 @@
 	import Fly from '$lib/components/fly/Fly.svelte';
 	import TagBlock from '$lib/components/core/TagBlock.svelte';
 	import Video from '$lib/components/core/Video.svelte';
+	import { YEAR } from '$lib/config';
 
 	import talk from '$lib/assets/images/Public talk-pana.svg?raw';
 	import community from '$lib/assets/images/Team spirit-pana.svg?raw';
@@ -14,7 +15,7 @@
 	<div class="pt-10 mb-10 flex-center">
 		<Video
 			src="/AftermoviePycon2026.mp4"
-			message="Watch the PyCon 2025 Presentation"
+			message={`Watch the PyCon ${YEAR} Presentation`}
 			class="center max-h-[480px]"
 		/>
 	</div>
