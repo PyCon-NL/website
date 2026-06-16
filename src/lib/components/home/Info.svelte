@@ -15,7 +15,7 @@
 	<div class="pt-10 mb-10 flex-center">
 		<Video
 			src="/AftermoviePycon2026.mp4"
-			message={`Watch the PyCon ${YEAR} Presentation`}
+			message={`Watch the PyCon ${YEAR-1} Presentation`}
 			class="center max-h-[480px]"
 		/>
 	</div>
