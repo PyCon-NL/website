@@ -1,6 +1,6 @@
 name: Save Assets as a Github Release
 
-on: 
+on:
   push:
     tags:
       # Try to only match year name tags, e.g. 2024. This can also be enforced with the setting "restrict tag names" in the repository settings
@@ -14,15 +14,17 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [20.x]
+        node-version: [26.x]
 
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@v3
+        uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10
+
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e
         with:
           node-version: ${{ matrix.node-version }}
+
       - name: Install and Build components 🔧
         # .nojekyll: do not ignore _ dirs
         run: |
@@ -30,16 +32,18 @@ jobs:
           npm run build
           touch build/.nojekyll
           tar -czvf dist.tar.gz -C build .
-        # mkdir 
+        # mkdir
         #     CI: false # true -> fails on warning
+
       - name: Extract branch name
         shell: bash
         run: echo "branch=${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}" >> $GITHUB_OUTPUT
         id: extract_branch
+
       - name: Create Release
-        uses: ncipollo/release-action@v1
+        uses: ncipollo/release-action@339a81892b84b4eeb0f6e744e4574d79d0d9b8dd
         with:
-          artifacts: "dist.tar.gz"
-          body: "Final version for ${{ steps.extract_branch.outputs.branch }}"
+          artifacts: 'dist.tar.gz'
+          body: 'Final version for ${{ steps.extract_branch.outputs.branch }}'
           allowUpdates: true
           replacesArtifacts: true
