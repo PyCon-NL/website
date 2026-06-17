@@ -18,11 +18,13 @@ jobs:
 
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@v3
+        uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10
+
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e
         with:
           node-version: ${{ matrix.node-version }}
+
       - name: Install and Build components 🔧
         # .nojekyll: do not ignore _ dirs
         run: |
@@ -39,7 +41,7 @@ jobs:
         id: extract_branch
 
       - name: Create Release
-        uses: ncipollo/release-action@v1
+        uses: ncipollo/release-action@339a81892b84b4eeb0f6e744e4574d79d0d9b8dd
         with:
           artifacts: 'dist.tar.gz'
           body: 'Final version for ${{ steps.extract_branch.outputs.branch }}'
