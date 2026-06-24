@@ -125,7 +125,7 @@
             {@html tiers}
         </div>
 
-        <div class="mt-4 flex items-center justify-center overflow-x-auto">
+        <div class="mt-4 w-full overflow-x-auto">
             <table class="table-with-spacing responsive-table">
                 <thead>
                     <tr class="header-row-color">
@@ -136,16 +136,27 @@
                 </thead>
                 <tbody>
                     {#each tableRows as row}
+                    <tr class="spacer-row"><td colspan={headers.length}></td></tr>
                     <tr>
-                        {#each row.content as cellContent, i}
-                        <td class="px-4 py-2 {i === 0 ? 'first-column-color' : 'cell-color'} align-top">
-                            <div class="row_header">{@html i == 0 ? row.label : "&nbsp;"}</div>
-                            {#each cellContent as item, j}
-                                <div class="row_content">{@html item ? item : "&nbsp;"}</div>
-                            {/each}
+                        <td class="px-4 py-2 first-column-color">
+                            <div class="row_header">{row.label}</div>
+                        </td>
+                        {#each [1, 2, 3, 4] as col}
+                        <td class="px-4 py-2 cell-color"></td>
+                        {/each}
+                    </tr>
+                    {#each row.content[0] as feature, i}
+                    <tr>
+                        <td class="px-4 py-2 first-column-color">
+                            <div class="row_content">{@html feature}</div>
+                        </td>
+                        {#each [1, 2, 3, 4] as col}
+                        <td class="px-4 py-2 cell-color">
+                            <div class="row_content">{@html row.content[col][i] || "&nbsp;"}</div>
                         </td>
                         {/each}
                     </tr>
+                    {/each}
                     {/each}
                 </tbody>
             </table>
@@ -194,29 +205,53 @@
     }
     .cell-color {
         background-color: #e3e8ffFF;
+        text-align: center;
     }
     .table-with-spacing {
         display: table;
-        border-spacing: 10px;
+        /* alleen horizontale ruimte tussen kolommen; verticale scheiding tussen
+           secties komt van de transparante spacer-row, zodat rijen binnen een
+           sectie netjes tegen elkaar uitlijnen */
+        border-spacing: 10px 0;
         border-collapse: separate;
     }
     .row_header {
         font-weight: bold;
         font-size: 1.2em;
     }
-    /* Om te zorgen dat elke styling correct wordt toegepast op elke cell moeten we de vertical align aangeven */
-    .align-top {
-        vertical-align: top;
+    .row_content {
+        line-height: 1.2;
+    }
+    .spacer-row td {
+        padding: 0;
+        height: 10px;
+        background-color: transparent;
     }
     /* Ik wil de tabel altijd volledig in beeld, met font grootte dat leesbaar is op elk apparaat. We passen het aan op basis van de view width */
     .responsive-table {
-        min-width: 500px;
         width: 100%;
-        font-size: clamp(0.75rem, 0.2rem + 1vw, 1rem);
+        font-size: clamp(0.6rem, 0.35rem + 1.1vw, 1rem);
     }
     .responsive-table td,
     .responsive-table th {
         vertical-align: top;
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+    }
+    /* Op kleine schermen verkleinen we de tussenruimte en padding zodat de hele tabel
+       in beeld blijft zonder horizontaal scrollen */
+    @media (max-width: 640px) {
+        .table-with-spacing {
+            border-spacing: 4px 0;
+        }
+        .responsive-table td,
+        .responsive-table th {
+            padding: 0.2rem 0.3rem;
+        }
+        .spacer-row td {
+            height: 6px;
+            padding: 0;
+        }
     }
     .spacing-top {
         margin-top: 2rem;
