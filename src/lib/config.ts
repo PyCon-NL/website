@@ -7,7 +7,7 @@ export const CONFERENCE_VENUE = "Jaarbeurs Utrecht, Netherlands";
 
 // Forms, links and emails
 export const TICKETS_URL = "/coming-soon";
-export const PAPERS_FORM_URL = '/coming-soon';
+export const PAPERS_FORM_URL = 'https://forms.gle/iiFnW8oZ8p9do4TR7';
 export const VOLUNTEERS_FORM_URL = "/coming-soon";
 export const GITHUB_URL = 'https://github.com/PyCon-NL/website/';
 export const PYNETHERLANDS_URL = 'https://www.pynl.org/';
@@ -26,7 +26,7 @@ export const HIDE_CALL_FOR_VOLUNTEERS = false;
 //   "open"        -> the actual page, with the form link active
 //   "closed"      -> the after-deadline page
 export type CallStatus = "coming-soon" | "open" | "closed";
-export const CALL_FOR_PAPERS_STATUS: CallStatus = "coming-soon";
+export const CALL_FOR_PAPERS_STATUS: CallStatus = "open";
 export const CALL_FOR_VOLUNTEERS_STATUS: CallStatus = "coming-soon";
 
 // Sponsor pricing information
