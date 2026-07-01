@@ -2,7 +2,7 @@
 export const YEAR = 2026;
 export const CONFERENCE_DATE = "October 15"
 export const CONFERENCE_DAY = "Thursday";
-export const PAPERS_PROPOSAL_DEADLINE = "Sunday, August 16"
+export const PAPERS_PROPOSAL_DEADLINE = "Sunday, August 23"
 export const CONFERENCE_VENUE = "Jaarbeurs Utrecht, Netherlands";
 
 // Forms, links and emails
