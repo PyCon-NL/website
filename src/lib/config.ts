@@ -27,7 +27,7 @@ export const HIDE_CALL_FOR_VOLUNTEERS = false;
 //   "closed"      -> the after-deadline page
 export type CallStatus = "coming-soon" | "open" | "closed";
 export const CALL_FOR_PAPERS_STATUS: CallStatus = "open";
-export const CALL_FOR_VOLUNTEERS_STATUS: CallStatus = "coming-soon";
+export const CALL_FOR_VOLUNTEERS_STATUS: CallStatus = "open";
 
 // Sponsor pricing information
 export const PLATINUM_PRICE = "€9,000.00";
