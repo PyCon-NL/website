@@ -6,7 +6,7 @@ export const PAPERS_PROPOSAL_DEADLINE = "Sunday, August 23"
 export const CONFERENCE_VENUE = "Jaarbeurs Utrecht, Netherlands";
 
 // Forms, links and emails
-export const TICKETS_URL = "/coming-soon";
+export const TICKETS_URL = "https://pyconnl26.eventbrite.nl/";
 export const PAPERS_FORM_URL = 'https://forms.gle/iiFnW8oZ8p9do4TR7';
 export const VOLUNTEERS_FORM_URL = "/coming-soon";
 export const GITHUB_URL = 'https://github.com/PyCon-NL/website/';
