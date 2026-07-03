@@ -8,7 +8,7 @@ export const CONFERENCE_VENUE = "Jaarbeurs Utrecht, Netherlands";
 // Forms, links and emails
 export const TICKETS_URL = "https://pyconnl26.eventbrite.nl/";
 export const PAPERS_FORM_URL = 'https://forms.gle/iiFnW8oZ8p9do4TR7';
-export const VOLUNTEERS_FORM_URL = "/coming-soon";
+export const VOLUNTEERS_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSdbbEVQM8yUozI8r9zvls2YwY3rZJJDXmxyJaF1zERKSPEyaw/viewform";
 export const GITHUB_URL = 'https://github.com/PyCon-NL/website/';
 export const PYNETHERLANDS_URL = 'https://www.pynl.org/';
 export const CODE_OF_CONDUCT_URL = 'https://www.pynl.org/code-of-conduct/';
@@ -27,7 +27,7 @@ export const HIDE_CALL_FOR_VOLUNTEERS = false;
 //   "closed"      -> the after-deadline page
 export type CallStatus = "coming-soon" | "open" | "closed";
 export const CALL_FOR_PAPERS_STATUS: CallStatus = "open";
-export const CALL_FOR_VOLUNTEERS_STATUS: CallStatus = "coming-soon";
+export const CALL_FOR_VOLUNTEERS_STATUS: CallStatus = "open";
 
 // Sponsor pricing information
 export const PLATINUM_PRICE = "€9,000.00";
