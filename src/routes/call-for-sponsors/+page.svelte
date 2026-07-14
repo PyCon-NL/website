@@ -60,7 +60,7 @@
                     "Logo on PyCon NL banners",
                     "Logo on PyCon NL website",
                     "Option to distribute goodies at the event",
-                    "Vacancy flyer may be distrubited",
+                    "Vacancy flyer may be distributed",
                     "Logo in the PyCon NL digital program guide"
                 ],
                 ["✔", "✔", "✔", "✔", "✔", "✔", "✔", "✔", "✔", "✔", "✔", "✔"],
