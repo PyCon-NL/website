@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Poster from './Background.svelte';
 	import TagBlock from '$lib/components/core/TagBlock.svelte';
-	import { YEAR, TICKETS_URL, HIDE_CALL_FOR_PAPERS, HIDE_CALL_FOR_VOLUNTEERS } from '$lib/config';
+	import { YEAR, TICKETS_URL, HIDE_CALL_FOR_PAPERS, HIDE_CALL_FOR_VOLUNTEERS, HIDE_CALL_FOR_SPONSORS, HIDE_SPEAKERS_CTA, HIDE_SCHEDULE_CTA } from '$lib/config';
 	import { Icon } from 'svelte-awesome';
 	import { chevronDown } from 'svelte-awesome/icons';
 	import Countdown from './Countdown.svelte';
@@ -20,12 +20,17 @@
 	const speakers = { label: "Speakers", link: "/speakers" };
 	const schedule = { label: "Schedule	", link: "/schedule" };
 
-	const menusLeft: Menu[] = [
+ <!--left is rendered before right. So if we publish more CTA's in the left menu we should think on the rendering order on mobile (tickets first?)-->
+	const menusRight: Menu[] = [
 		tickets,
 		...(!HIDE_CALL_FOR_PAPERS ? [papers] : []),
 		...(!HIDE_CALL_FOR_VOLUNTEERS ? [volunteers] : []),
 	];
-	const menusRight: Menu[] = [sponsors, speakers, schedule];
+	const menusLeft: Menu[] = [
+	  ...(!HIDE_CALL_FOR_SPONSORS ? [sponsors] : []),
+	  ...(!HIDE_SPEAKERS_CTA ? [speakers] : []),
+	  ...(!HIDE_SCHEDULE_CTA ? [schedule] : []),
+	];
 
 	const menuStagger = 4;
 </script>

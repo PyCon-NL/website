@@ -1,7 +1,7 @@
 <script lang="ts">
     import { page } from "$app/stores";
     import { onMount } from "svelte";
-    import { CODE_OF_CONDUCT_URL, HIDE_CALL_FOR_PAPERS, HIDE_CALL_FOR_VOLUNTEERS } from "$lib/config";
+    import { CODE_OF_CONDUCT_URL, HIDE_CALL_FOR_PAPERS, HIDE_CALL_FOR_VOLUNTEERS, TICKETS_URL } from "$lib/config";
 
     $: currentPath = $page.url.pathname;
 
@@ -13,6 +13,7 @@
 
     const items: MenuItem[] = [
         { label: "Home", route: "/" },
+        { label: "Tickets", route: TICKETS_URL },
         {
             label: "The Event",
             submenu: [
