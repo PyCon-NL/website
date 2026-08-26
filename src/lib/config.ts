@@ -26,7 +26,7 @@ export const HIDE_CALL_FOR_VOLUNTEERS = false;
 //   "open"        -> the actual page, with the form link active
 //   "closed"      -> the after-deadline page
 export type CallStatus = "coming-soon" | "open" | "closed";
-export const CALL_FOR_PAPERS_STATUS: CallStatus = "open";
+export const CALL_FOR_PAPERS_STATUS: CallStatus = "closed";
 export const CALL_FOR_VOLUNTEERS_STATUS: CallStatus = "open";
 
 // Sponsor pricing information
