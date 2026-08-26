@@ -20,7 +20,6 @@
 	const speakers = { label: "Speakers", link: "/speakers" };
 	const schedule = { label: "Schedule	", link: "/schedule" };
 
- <!--left is rendered before right. So if we publish more CTA's in the left menu we should think on the rendering order on mobile (tickets first?)-->
 	const menusRight: Menu[] = [
 		tickets,
 		...(!HIDE_CALL_FOR_PAPERS ? [papers] : []),
