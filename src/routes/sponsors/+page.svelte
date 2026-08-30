@@ -16,8 +16,24 @@
             <div class="text-xl text-center font-bold">Supported by:</div>
             <div class="mt-4 flex flex-wrap gap-4 justify-center">
                 {#each support as supporter}
-                    <a href={supporter.url} target="_blank" aria-label={supporter.name}>
+                    {#if supporter.url}
+                        <a href={supporter.url} target="_blank" rel="noreferrer" aria-label={supporter.name}>
+                            <div
+                                class="
+                                    rounded-xl bg-white
+                                    w-40
+                                    aspect-square
+                                    grid place-items-center
+                                    bg-contain bg-no-repeat bg-center
+                                "
+                                style="background-image: url({supporter.logo});"
+                            >
+                            </div>
+                        </a>
+                    {:else}
                         <div
+                            role="img"
+                            aria-label={supporter.name}
                             class="
                                 rounded-xl bg-white
                                 w-40
@@ -28,7 +44,7 @@
                             style="background-image: url({supporter.logo});"
                         >
                         </div>
-                    </a>
+                    {/if}
                 {/each}
             </div>
         </div>
