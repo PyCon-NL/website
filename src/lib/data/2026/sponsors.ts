@@ -2,6 +2,12 @@ import type { Sponsor } from '../types';
 
 export const sponsors: Sponsor[] = [
     {
+        tier: "platinum",
+        name: "Sopra Steria",
+        logo: "/sponsors/ssg.jpg",
+        url: "https://www.soprasteria.nl/",
+    },
+    {
         tier: "gold",
         name: "Qstars IT",
         logo: "/sponsors/qstars.png",
