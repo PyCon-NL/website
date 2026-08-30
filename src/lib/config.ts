@@ -18,8 +18,11 @@ export const MASTODON_URL = 'https://mastodon.social/@pycon_nl/';
 export const CONTACT_EMAIL = 'info@pycon-nl.org';
 
 // Call for papers and volunteers visibility (hides the item from the nav entirely)
-export const HIDE_CALL_FOR_PAPERS = false;
+export const HIDE_CALL_FOR_PAPERS = true;
 export const HIDE_CALL_FOR_VOLUNTEERS = false;
+export const HIDE_CALL_FOR_SPONSORS = true;
+export const HIDE_SPEAKERS_CTA = true;
+export const HIDE_SCHEDULE_CTA = true;
 
 // Call for papers and volunteers page status. Controls what the page renders:
 //   "coming-soon" -> shared "Coming soon!" holding page
