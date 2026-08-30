@@ -32,6 +32,12 @@ export type Sponsor = {
     url?: string;
 };
 
+export type Support = {
+    name: string;
+    logo: string;
+    url?: string;
+};
+
 export type Speaker = {
     id: number;
     name: string;
