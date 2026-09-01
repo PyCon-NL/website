@@ -8,6 +8,12 @@ export const sponsors: Sponsor[] = [
         url: "https://www.soprasteria.nl/",
     },
     {
+        tier: "platinum",
+        name: "Sendcloud",
+        logo: "/sponsors/sendcloud.png",
+        url: "https://www.sendcloud.com/",
+    },
+    {
         tier: "gold",
         name: "Qstars IT",
         logo: "/sponsors/qstars.png",
