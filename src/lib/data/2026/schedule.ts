@@ -25,6 +25,18 @@ export const schedule: Schedule<2026> = [
     id: 1,
   },
   {
+    type: "talk",
+    trackType: "single",
+    title: "PyLadies Community Event",
+    description: "weuifhjwiuegfhui",
+    room: "Flash",
+    speakerId: 99,
+    timeSlot: "10:45",
+    year: 2026,
+    id: 4,
+    multiSlot: 3
+  },
+  {
     type: "other",
     trackType: "common",
     title: "Break",
@@ -33,13 +45,25 @@ export const schedule: Schedule<2026> = [
   {
     type: "talk",
     trackType: "single",
-    title: "Community Organizers sprint",
+    title: "Community Organizers sprint - Part 1",
     description: "weuifhjwiuegfhui",
     room: "Flash",
     speakerId: 15,
-    timeSlot: "10:45",
+    timeSlot: "13:30",
     year: 2026,
     id: 2,
+    multiSlot: 2
+  },
+  {
+    type: "talk",
+    trackType: "single",
+    title: "Community Organizers sprint - Part 2",
+    description: "weuifhjwiuegfhui",
+    room: "Flash",
+    speakerId: 15,
+    timeSlot: "14:50",
+    year: 2026,
+    id: 3,
     multiSlot: 2
   },
   {
