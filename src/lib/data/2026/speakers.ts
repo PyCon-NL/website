@@ -8,210 +8,185 @@ import type { Speaker } from '../types';
 export const speakers: Speaker[] = [
   {
     id: 1,
-    name: "William Lacerda",
-    position: "Backend Developer",
-    company: "Polarsteps",
-    bio: `William Lacerda is a seasoned backend developer with over 8 years of experience.
+    name: "Charles de Leau",
+    position: "Principal Data Scientist",
+    company: "Carda",
+    bio: `Charles has 13 years of experience in data and AI. He spent several years in consultancy
+    before seeing the light at Bol.com, where he worked for five years in roles including data 
+    scientist, engineering manager, and data science craft lead. In that last role, he was responsible 
+    for data science practices across the Shopping and Advertising domain. In this time he also 
+    freelanced for US GenAI start-ups.
 
-While his primary expertise lies in TypeScript development, William has dedicated the past 3 years to mastering Python.`,
-    image: "/speakers/william_lacerda.jpg",
-    years: [2025],
+    Over the past two years, he has mostly worked independently on his open-source gambling project.
+    Quite a change from Bol.com, where his domain included 256 data scientists, ML engineers and 
+    software engineers. He also started a PhD at the University of Amsterdam, which may or may not 
+    have been a sensible idea at 36.`,
+    image: "/speakers/charles_de_leau.jpeg",
+    years: [2026],
   },
   {
     id: 2,
-    name: "Arie Bovenberg",
-    position: "Principal Software Engineer",
-    bio: `Civil engineer by degree, programmer by passion.
-
-I've worked across startups and corporates, mostly in Python, with a love for Rust and functional programming concepts.
-
-Author of \`whenever\` and \`slotscheck\`, I focus on making code maintainable and sharing deep insights with the community.`,
-    image: "/speakers/arie_bovenberg.jpg",
-    years: [2025],
+    name: "Daria Korsakova",
+    position: "Software Engineer",
+    company: "Manychat",
+    bio: `Daria Korsakova is a Python Engineer at Manychat, 
+    
+where she builds backend systems for Brands, one of the company’s newest products, and
+leads the observability effort from the ground up. Her work focuses on production 
+reliability, monitoring, and designing systems that make it easier to understand what
+is happening when things go wrong. She is particularly interested in turning real 
+production incidents into better engineering practices, clearer signals, and more resilient
+systems. 
+    
+Daria writes and speaks about practical observability in Python and presented 
+this talk at EuroPython 2026`,
+    image: "/speakers/daria_korsakova.jpeg",
+    years: [2026],
   },
   {
     id: 3,
     name: "Thiago Bellini Ribeiro",
-    position: "Software Engineer",
+    position: "Senior Software Engineer",
     company: "Sendcloud",
-    bio: `My name is Thiago Bellini Ribeiro - a 37 year-old Brazilian 🇧🇷 software engineer living and working in the Netherlands 🇳🇱 at Sendcloud, with my wife, two dogs 🐶, and two cats 😸.
+    bio: `My name is Thiago Bellini Ribeiro, a 38 year-old Brazilian 🇧🇷 software engineer 
+living and working in the Netherlands 🇳🇱 at Sendcloud, with my wife, two dogs 🐶, and two cats 😸.
 
 I've been passionate about Python since 2010, using it both professionally and personally.
+As an open-source enthusiast, I'm always looking for ways to give back to the community. Since
+2022, I've been a maintainer of the 🍓 Strawberry GraphQL Python library - a project I continue
+to support out of passion, even though I no longer use it in my day-to-day work.
 
-As an open-source enthusiast, I'm always looking for ways to give back to the community. Since 2022, I've been a maintainer of the 🍓 Strawberry GraphQL Python library - a project I continue to support out of passion, even though I no longer use it in my day-to-day work.
-
-Outside of coding, I'm known for my positive outlook and my eagerness to help others in the tech community.
-
-I love connecting with people, sharing knowledge, and contributing to a collaborative and forward-thinking industry.`,
+Outside of coding, I'm known for my positive outlook and my eagerness to help others in the tech
+community. I love connecting with people, sharing knowledge, and contributing back to it.`,
     image: "/speakers/thiago_bellini_ribeiro.jpg",
-    years: [2025],
+    years: [2026],
   },
   {
     id: 4,
-    name: "Merel Theisen",
-    position: "Principal Software Engineer",
-    company: "QuantumBlack, AI by McKinsey",
-    bio: `I am a Principal Software Engineer at QuantumBlack, where I am currently the tech lead of Kedro, an open-source project part of the Linux Foundation.
-
-I have over eight years of experience in the software industry, with most of my career focused on backend product engineering.
-
-I am passionate about building products that solve real user problems, and I care deeply about creating robust, well-tested software that follows good engineering principles.
-
-I am also a strong advocate for open-source software, and I find working with the community to be both inspiring and energising.`,
-    image: "/speakers/merel_theisen.png",
-    years: [2025],
+    name: "Linda Kolb",
+    position: "End-to-End Data Scientist",
+    company: "SupplyBrain",
+    bio: `Linda has several years of experience using Python across automation, data science and 
+    modern tooling. If she is not busy building data flows, she is flowing on the yoga mat.`,
+    image: "/speakers/linda_kolb.jpg",
+    years: [2026],
   },
   {
     id: 5,
-    name: "Klaas van Schelven",
-    position: "Creator of Bugsink",
-    company: "Bugsink",
-    image: "/speakers/klaas_van_schelven.jpg",
-    bio: `Klaas van Schelven is the creator of Bugsink, an error tracker written in Python and one of the most successful Dutch Python projects in recent years.
-
-He has contributed to Django and many other Python open source projects.
-
-Klaas is an engaging speaker, with talks at tech conferences including DjangoCon Europe and the European Lisp Symposium, and is a regular guest at local meetups. He was also the European University Debating Champion.`,
-    years: [2025],
+    name: "Derviş van Leersum",
+    position: "Software Engineer",
+    company: "Sopra Steria",
+    bio: `Derviş traded load-bearing structures for load-bearing Python scripts nearly a decade 
+    ago and never looked back. As an engineer at Sopra Steria he works on projects 
+    for TenneT, helping build the infrastructure for the energy transition — which, if you ask 
+    him, is a pretty exciting place to write Python for a living. In his own time he's turning a 
+    pizza discovery and ranking platform into a production monorepo. You'll likely learn more about
+    his pizza obsession at PyCon NL.`,
+    image: "/speakers/dervis_van_leersum.jpg",
+    years: [2026],
   },
   {
     id: 6,
-    name: "Alexander Procelewski",
-    position: "Master's Student and Teaching Assistant",
-    company: "EPFL",
-    bio: `Alexander Procelewski is a Master's student at EPFL, where he is focused on systems engineering.
-
-Earlier this year, he worked as a software engineer on placement at Bloomberg in London, developing high-throughput analytics systems.
-
-Alex has worked across academia and industry — from contributing to distributed systems research in Groningen to building scalable back-end infrastructure at a healthtech startup.
-
-He remains active as a teacher in academia, currently serving as a Teaching Assistant at EPFL.
-
-He was previously named "Teaching Assistant of the Year" at the University of Groningen.
-
-Alex earned a bachelor's degree from the University of Groningen, where he also attended the Honours College. His undergraduate thesis explored "Energy Analysis of Automatic SIMD Vectorization," and his master's research has continued in the performance space, with a semester-long project evaluating TPCx-AI on GPU clusters.
-
-In his free time, Alex enjoys playing chess and bouldering.`,
-    image: "/speakers/alex_procelewski.jpg",
-    years: [2025],
+    name: "Maikel Mardjan",
+    position: "IT Architect",
+    company: "NO Complexity",
+    bio: `Based in the Netherlands, Maikel is an independent architect with over 30 years of 
+    experience designing and securing complex IT systems for organizations of all sizes. He holds 
+    MSc degrees in Business Studies from the University of Groningen and Electrical Engineering 
+    from the Delft University of Technology. Maikel loves new technology and frequently uses 
+    Python to bring his ideas to life. `,
+    image: "/speakers/maikel_mardjan.jpg",
+    years: [2026],
   },
   {
     id: 7,
-    name: "Aris Nivorlis",
-    position: "Researcher Geophysicist and Data Steward",
-    company: "Deltares",
-    image: "/speakers/aris_nivorlis.jpg",
-    bio: `Aris Nivorlis is a researcher geophysicist and data steward at Deltares, where he uses data and tooling to answer complex questions about the subsurface.
+    name: "James Donahue",
+    position: "Founder | Data Scientist",
+    company: "Jim's Data Gym",
+    bio: `Originally from Nashville, Tennessee, James has bounced around a few continents and 
+    professions before settling in data, including adventure tourism and education. He landed 
+    in Hamburg, Germany in 2017 and stayed.
 
-He is passionate about promoting good practices in data management and scientific coding, helping teams build sustainable and reproducible workflows.
+    His current project it Jim's Data Gym, a data exercise platform that gives users bite-sized 
+    data tasks in Python. It is currently undergoing its first test release. If it survives, he 
+    will live his dream live of combining data and education full-time.
 
-Outside of work, Aris is actively involved in the European Python community, contributing to the organization and support of conferences and community initiatives.
-
-When he's not at his computer, you'll likely find him dancing salsa.`,
-    years: [2025],
+    When not working, he can often be found in the garden, where he plays guitar (badly) and 
+    manages the compost. He still kayaks occasionally.`,
+    image: "/speakers/james_donahue.jpg",
+    years: [2026],
   },
   {
     id: 8,
-    name: "Carlo van Overbeek",
-    position: "Fullstack DevOps Engineer Cloud",
-    company: "Schuberg Philis",
-    bio: `A graduate PhD in physical chemistry turned DevOps with a particular interest in infrastructure and security automation.
-
-Most skilled in Python and Terraform (preferably in AWS).
-
-Sometimes dipping a toe in JavaScript and Bash when unavoidable. Currently working on automating security for Geldmaat in AWS at Schuberg Philis.
-
-Privately working on gamification of encryption and of trusted knowledge.`,
-    image: "/speakers/carlo_van_overbeek.jpg",
-    years: [2025],
+    name: "Tarun Jain",
+    position: "AI Research",
+    company: "Kaivid Labs",
+    bio: `Tarun Jain is a Founding Engineer at Kaivid Labs, a Google Developer Expert in AI, 
+    and a Qdrant Distinguished Ambassador. Tarun has contributed to Google Summer of Code 2024 
+    at Red Hen Lab and Google Summer of Code 2023 at caMicroscope. He also creates content on 
+    his YouTube channel, AI with Tarun.`,
+    image: "/speakers/tarun_jain.png",
+    years: [2026],
   },
   {
     id: 9,
-    name: "Daniele Procida",
-    position: "Director of Engineering",
-    company: "Canonical",
-    bio: `I am a Director of Engineering at Canonical, where I lead documentation practice.
-
-I developed the Diátaxis documentation framework, which is now widely used in the industry. I've been involved in Python and Django for many years, including as a Django core developer.
-
-I enjoy helping organise community conferences for Python and Django. That includes multiple editions of DjangoCon Europe, as well as the first editions of PyCon Africa and DjangoCon Africa.
-
-I also enjoy helping people and open-source projects improve their documentation.`,
-    years: [2025],
+    name: "Henk-Jan van Hasselaar",
+    position: "Software Engineer",
+    company: "Alliander",
+    bio: `Henk-Jan is a software engineer and architect, currently working as a Staff 
+    Software Engineer at Alliander where he's focused on improving digital resilience across 
+    the organization. When he’s not behind a keyboard, he occasionally remembers to touch grass, 
+    usually while training for an ultra trail event, which seemed like a good idea at the time.`,
+    image: "/speakers/kader_miyanyedi.jpg",
+    years: [2026],
   },
   {
     id: 10,
-    name: "Sebastiaan Zeeff",
-    position: "Principal Expert",
-    company: "Sopra Steria",
-    image: "/speakers/sebastiaan_zeeff.jpg",
-    bio: `Sebastiaan is a Python enthusiast who likes to think about good software design and engineering.
-
-He is a fellow of the EuroPython Society and the Python Software Foundation, works as a Principal Expert for the Pythoneers at Sopra Steria Netherlands, and frequently speaks at conferences around the world.`,
-    years: [2025],
+    name: "Yuvraj Singh Pathania",
+    position: "Software Engineer",
+    company: "RSM",
+    bio: `Yuvraj is a software engineer focused on backend and AI systems at scale, 
+    currently pursuing an MSc in Computer Science at TU Delft. His research asks a simple but 
+    under-examined question: when an AI system checks its own work, who's checking the checker? 
+    Before grad school, he worked at CloudSEK, a cybersecurity threat intelligence company, 
+    building data pipelines at scale to process security signals such as brand impersonation 
+    attacks, and the models that turned those signals into insights security teams could act on. 
+    He has also spoken at PyDelhi Conference on building a real-time, multi-client log streaming 
+    service in Python using Server-Sent Events. Outside of code, Yuvraj produces and performs 
+    music as Patty Jr. and has over 50,000 streams across multiple streaming platforms. When he's 
+    not on stage or debugging a pipeline at 2am, he's probably Claude-tokenmaxxing his way through 
+    whatever research rabbit hole he's fallen into that week.`,
+    image: "/speakers/kader_miyanyedi.jpg",
+    years: [2026],
   },
   {
     id: 11,
-    name: "Steven Pemberton",
-    position: "Researcher, author, public speaker, and broadcaster",
-    bio: `Steven Pemberton is a distinguished researcher in the fields of interaction, declarative programming, and web technologies, based at the Dutch national research centre CWI in Amsterdam, where Python originated.
-
-His university tutor was Dick Grimsdale who built the world's first transistorised computer, and who was himself a tutee of Alan Turing. After university, Pemberton -- coincidentally -- worked in Turing's old department on the 5th computer in the line of computers Turing had worked on.
-
-He co-designed the language that Python is based on, was the first user of the open internet in Europe in 1988, and has been involved with the web from its inception, co-designing several web standards, including HTML, CSS, XHTML, XForms, and RDFa.
-
-In 2022 he received the ACM SIGCHI Lifetime Practice Award, and in 2023 was named an ACM Distinguished Speaker.`,
-    image: "/speakers/steven_pemberton.jpg",
-    years: [2025],
+    name: "Taras Kozlov",
+    position: "Software Developer",
+    bio: `Taras is a software developer with a background in C++ who now works mostly with Python. 
+    I am especially interested in performance, low-latency systems, and understanding what happens 
+    beneath high-level abstractions. I am the author of the open-source Python packages picows and 
+    aiofastnet, which focus on high-performance asynchronous networking.`,
+    image: "/speakers/kader_miyanyedi.jpg",
+    years: [2026],
   },
   {
     id: 12,
-    name: "Sofie van Landeghem",
-    position: "Software Engineer",
-    company: "OxyKodit",
-    bio: `Sofie is a software developer who firmly believes in the power of data to transform decision making in industry.
-
-Through her one-woman consulting company OxyKodit, she develops tailored AI solutions for a variety of businesses and domains, leaning on nearly 2 decades of experience (and a PhD) in Natural Language Processing and Machine Learning.
-
-She's also passionate about open-source, having worked on various popular Python packages including FastAPI, Typer and spaCy.`,
-    image: "/speakers/sofie_van_landeghem.jpg",
-    years: [2025],
-  },
-  {
-    id: 13,
-    name: "Özge Çinko",
-    position: "AI Research Engineer",
-    company: "Huawei",
-    bio: `I'm Özge Çinko, a curious soul with a computer engineering degree and a heart full of ideas.
-
-I'm currently shaping the future as an AI Research Engineer at Huawei. I work in AI research, but I'm just as passionate about blending creativity with code.
-
-Whether it's turning emotions into visuals, building fictional chatbots, or crafting data stories, I love making tech feel personal.
-
-I write, build, explore, and sometimes get beautifully lost in too many ideas, but always with Python by my side.`,
-    image: "/speakers/ozge_cinko.jpg",
-    years: [2025],
-  },
-  {
-    id: 14,
-    name: "Kader Miyanyedi",
-    position: "Backend Developer",
-    company: "BRANDEFENSE",
-    bio: `I have been working as a backend developer for 4 years, primarily using Python and Django to build web applications and APIs.
-
-I enjoy sharing my knowledge by writing articles on Medium and other platforms, focusing on Python, Django best practices, performance optimization, and modern development techniques.
-
-Passionate about clean code and continuous learning, I aim to help the community by delivering clear and practical talks.`,
+    name: "Murilo",
+    position: "Machnine Learning Engineer",
+    company: "Dataroots",
+    bio: `Murilo Cunha is CTO at Dataroots, a data and AI consultancy in Belgium. A machine 
+    learning engineering turned Pythonista, he spent years building data and ML systems for a 
+    living, with a focus on MLOps and making these systems practical and usable. He also tinkered 
+    with GenAI models before the name caught on, playing with NLP long before the ChatGPT release 
+    (but definitely more since). Throughout the years, he created databooks, an open source tool 
+    for keeping data science notebooks clean and reviewable, more recently pytest-agent-eval 
+    for LLM agent testing. He enjoys digging into Python performance and how it plays with other 
+    languages (such as Rust, mojo, mypyc and pypy). He co-hosts the Bright Signal and DataTopics 
+    podcasts and is one of the organizers of the Python User Group Belgium and PyData Belgium meetup 
+    groups. He has spoken at several PyCon events, mostly because he likes chat with passionate 
+    people about tech over coffee.`,
     image: "/speakers/kader_miyanyedi.jpg",
-    years: [2025, 2026],
-  },
-  {
-    id: 15,
-    name: "Gareth",
-    position: "Backend Developer",
-    company: "BRANDEFENSE",
-    bio: ``,
-    image: "/speakers/kader_miyanyedi.jpg",
-    years: [2025, 2026],
-  },
+    years: [2026],
+  }
 ];
