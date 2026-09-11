@@ -7,7 +7,7 @@ import type { Speaker } from '../types';
 
 export const speakers: Speaker[] = [
   {
-    id: 1,
+    id: 15,
     name: "Charles de Leau",
     position: "Principal Data Scientist",
     company: "Carda",
@@ -25,7 +25,7 @@ export const speakers: Speaker[] = [
     years: [2026],
   },
   {
-    id: 2,
+    id: 16,
     name: "Daria Korsakova",
     position: "Software Engineer",
     company: "Manychat",
@@ -62,7 +62,7 @@ community. I love connecting with people, sharing knowledge, and contributing ba
     years: [2026],
   },
   {
-    id: 4,
+    id: 17,
     name: "Linda Kolb",
     position: "End-to-End Data Scientist",
     company: "SupplyBrain",
@@ -72,7 +72,7 @@ community. I love connecting with people, sharing knowledge, and contributing ba
     years: [2026],
   },
   {
-    id: 5,
+    id: 18,
     name: "Derviş van Leersum",
     position: "Software Engineer",
     company: "Sopra Steria",
@@ -86,7 +86,7 @@ community. I love connecting with people, sharing knowledge, and contributing ba
     years: [2026],
   },
   {
-    id: 6,
+    id: 19,
     name: "Maikel Mardjan",
     position: "IT Architect",
     company: "NO Complexity",
@@ -99,7 +99,7 @@ community. I love connecting with people, sharing knowledge, and contributing ba
     years: [2026],
   },
   {
-    id: 7,
+    id: 20,
     name: "James Donahue",
     position: "Founder | Data Scientist",
     company: "Jim's Data Gym",
@@ -117,7 +117,7 @@ community. I love connecting with people, sharing knowledge, and contributing ba
     years: [2026],
   },
   {
-    id: 8,
+    id: 21,
     name: "Tarun Jain",
     position: "AI Research",
     company: "Kaivid Labs",
@@ -129,7 +129,7 @@ community. I love connecting with people, sharing knowledge, and contributing ba
     years: [2026],
   },
   {
-    id: 9,
+    id: 22,
     name: "Henk-Jan van Hasselaar",
     position: "Software Engineer",
     company: "Alliander",
@@ -141,7 +141,7 @@ community. I love connecting with people, sharing knowledge, and contributing ba
     years: [2026],
   },
   {
-    id: 10,
+    id: 23,
     name: "Yuvraj Singh Pathania",
     position: "Software Engineer",
     company: "RSM",
@@ -160,7 +160,7 @@ community. I love connecting with people, sharing knowledge, and contributing ba
     years: [2026],
   },
   {
-    id: 11,
+    id: 24,
     name: "Taras Kozlov",
     position: "Software Developer",
     bio: `Taras is a software developer with a background in C++ who now works mostly with Python. 
@@ -171,7 +171,7 @@ community. I love connecting with people, sharing knowledge, and contributing ba
     years: [2026],
   },
   {
-    id: 12,
+    id: 25,
     name: "Murilo",
     position: "Machnine Learning Engineer",
     company: "Dataroots",
