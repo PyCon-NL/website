@@ -209,7 +209,7 @@ export const schedule: Schedule<2026> = [
     speakerId: 15,
     timeSlot: "14:50",
     year: 2026,
-    id: 3,
+    id: 12,
     multiSlot: 2
   },
   {
@@ -217,6 +217,17 @@ export const schedule: Schedule<2026> = [
     trackType: "common",
     title: "Break",
     timeSlot: "15:55",
+  },
+  {
+    type: "talk",
+    trackType: "common",
+    title: "Keynote - TBA",
+    description: ``,
+    room: "Polars",
+    speakerId: 99,
+    timeSlot: "16:10",
+    year: 2026,
+    id: 13,
   },
   {
     type: "other",
