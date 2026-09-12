@@ -167,13 +167,13 @@ community. I love connecting with people, sharing knowledge, and contributing ba
     I am especially interested in performance, low-latency systems, and understanding what happens 
     beneath high-level abstractions. I am the author of the open-source Python packages picows and 
     aiofastnet, which focus on high-performance asynchronous networking.`,
-    image: "/speakers/kader_miyanyedi.jpg",
+    image: "/speakers/taras_kozlov.jpeg",
     years: [2026],
   },
   {
     id: 25,
     name: "Murilo",
-    position: "Machnine Learning Engineer",
+    position: "Machine Learning Engineer",
     company: "Dataroots",
     bio: `Murilo Cunha is CTO at Dataroots, a data and AI consultancy in Belgium. A machine 
     learning engineering turned Pythonista, he spent years building data and ML systems for a 
