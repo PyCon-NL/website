@@ -137,7 +137,7 @@ community. I love connecting with people, sharing knowledge, and contributing ba
     Software Engineer at Alliander where he's focused on improving digital resilience across 
     the organization. When he’s not behind a keyboard, he occasionally remembers to touch grass, 
     usually while training for an ultra trail event, which seemed like a good idea at the time.`,
-    image: "/speakers/kader_miyanyedi.jpg",
+    image: "/speakers/henk-jan.png",
     years: [2026],
   },
   {
@@ -145,18 +145,12 @@ community. I love connecting with people, sharing knowledge, and contributing ba
     name: "Yuvraj Singh Pathania",
     position: "Software Engineer",
     company: "RSM",
-    bio: `Yuvraj is a software engineer focused on backend and AI systems at scale, 
-    currently pursuing an MSc in Computer Science at TU Delft. His research asks a simple but 
-    under-examined question: when an AI system checks its own work, who's checking the checker? 
-    Before grad school, he worked at CloudSEK, a cybersecurity threat intelligence company, 
-    building data pipelines at scale to process security signals such as brand impersonation 
-    attacks, and the models that turned those signals into insights security teams could act on. 
-    He has also spoken at PyDelhi Conference on building a real-time, multi-client log streaming 
-    service in Python using Server-Sent Events. Outside of code, Yuvraj produces and performs 
-    music as Patty Jr. and has over 50,000 streams across multiple streaming platforms. When he's 
-    not on stage or debugging a pipeline at 2am, he's probably Claude-tokenmaxxing his way through 
-    whatever research rabbit hole he's fallen into that week.`,
-    image: "/speakers/kader_miyanyedi.jpg",
+    bio: `Yuvraj is a product-first backend and AI engineer and a Master's student in Computer 
+    Science at TU Delft. He currently works part-time as an AI consultant at RSM and has spent 
+    the past three years building backend systems and distributed infrastructure, from Kafka 
+    pipelines to the occasional cron job that absolutely refuses to cooperate. Outside engineering, 
+    he DJs under the name Patty Jr, preferably while waiting for said cron job to finish.`,
+    image: "/speakers/yuvraj.jpeg",
     years: [2026],
   },
   {
@@ -186,7 +180,7 @@ community. I love connecting with people, sharing knowledge, and contributing ba
     podcasts and is one of the organizers of the Python User Group Belgium and PyData Belgium meetup 
     groups. He has spoken at several PyCon events, mostly because he likes chat with passionate 
     people about tech over coffee.`,
-    image: "/speakers/kader_miyanyedi.jpg",
+    image: "/speakers/placeholder.jpg",
     years: [2026],
   }
 ];
