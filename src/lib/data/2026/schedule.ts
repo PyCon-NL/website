@@ -129,20 +129,21 @@ to a specific monitoring vendor.`,
   {
     type: "talk",
     trackType: "single",
-    title: "Testing LLM agents with Pytest",
-    description: `Normal pytest tests assume a few things: same input gives same output, 
-    there's one right answer, and it costs nothing to run. Add LLM agents to the mix and 
-    your assumptions go out the window. LLMs are probabilistic, and for closed models you 
-    can never guarantee the same output.
+    title: "TBD", // "Testing LLM agents with Pytest",
+    description: "TDB",
+//     `Normal pytest tests assume a few things: same input gives same output, 
+//     there's one right answer, and it costs nothing to run. Add LLM agents to the mix and 
+//     your assumptions go out the window. LLMs are probabilistic, and for closed models you 
+//     can never guarantee the same output.
 
-In this talk, I'll walk through my journey on building (with) LLMs, the need for tests, a 
-framework that was built from these needs, and the features of the 
-[Pytest plugin](https://datarootsio.github.io/pytest-agent-eval/main/) that came from it 
-for testing LLM agents: aggregate runs, the different kind of checks, among other things. 
-We'll start on "what is a test" all the way to what's the industry standard for LLM testing, 
-and how we can make it practical with Pytest and CI runs.`,
+// In this talk, I'll walk through my journey on building (with) LLMs, the need for tests, a 
+// framework that was built from these needs, and the features of the 
+// [Pytest plugin](https://datarootsio.github.io/pytest-agent-eval/main/) that came from it 
+// for testing LLM agents: aggregate runs, the different kind of checks, among other things. 
+// We'll start on "what is a test" all the way to what's the industry standard for LLM testing, 
+// and how we can make it practical with Pytest and CI runs.`,
     room: "Spark",
-    speakerId: 25,
+    speakerId: 99, // 25,
     timeSlot: "11:25",
     year: 2026,
     id: 6,
@@ -229,7 +230,7 @@ I will close with a practical framework for choosing between BackgroundTasks, a 
 a checkpointed pipeline based on how long your job runs.`,
     room: "Polars",
     speakerId: 23,
-    timeSlot: "13:30",
+    timeSlot: "14:50",
     year: 2026,
     id: 9,
   },
@@ -297,7 +298,7 @@ Target audience: Intermediate Python users. No packaging experience needed - cur
     title: "Community Organizers sprint - Part 1",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, ...",
     room: "Flash",
-    speakerId: 15,
+    speakerId: 99,
     timeSlot: "13:30",
     year: 2026,
     id: 12,
@@ -329,7 +330,7 @@ an LLM. None of these things are magic. So let's follow my favorite economics pr
 to turn this black box into a grey box!`,
     room: "Polars",
     speakerId: 20,
-    timeSlot: "14:50",
+    timeSlot: "13:30",
     year: 2026,
     id: 13,
   },
@@ -407,7 +408,7 @@ Python assumed.`,
     title: "Community Organizers sprint - Part 2",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, ...",
     room: "Flash",
-    speakerId: 15,
+    speakerId: 99,
     timeSlot: "14:50",
     year: 2026,
     id: 16,
