@@ -2,10 +2,10 @@ import { YEAR } from '$lib/config';
 
 // Extend this union each year
 const rooms2025 = ["Progress", "Quest"] as const;
-const rooms2026 = [] as const;
+const rooms2026 = ["Polars", "Spark", "Flash"] as const;
 
 const timeSlots2025 = ["08:00", "09:30", "09:45", "10:30", "10:45", "11:25", "12:05", "12:35", "13:30", "14:05", "14:35", "14:50", "15:25", "15:55", "16:10", "16:55", "17:05"] as const;
-const timeSlots2026 = [] as const;
+const timeSlots2026 = ["08:00", "09:30", "09:45", "10:30", "10:45", "11:25", "12:05", "12:35", "13:30", "14:05", "14:35", "14:50", "15:25", "15:55", "16:10", "16:55", "17:05"] as const;
 
 export const rooms = {
     2025: rooms2025,
