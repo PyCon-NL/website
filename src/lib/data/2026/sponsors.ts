@@ -20,6 +20,12 @@ export const sponsors: Sponsor[] = [
         url: "https://www.qstars.nl",
     },
     {
+        tier: "gold",
+        name: "DuckLabs",
+        logo: "/sponsors/ducklabs.png",
+        url: "https://ducklabs.com/",
+    },
+    {
         tier: "bronze",
         name: "Channable",
         logo: "/sponsors/channable_horizontal.png",
