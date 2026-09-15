@@ -131,7 +131,7 @@ community. I love connecting with people, sharing knowledge, and contributing ba
   {
     id: 22,
     name: "Henk-Jan van Hasselaar",
-    position: "Software Engineer",
+    position: "Staff Software Engineer",
     company: "Alliander",
     bio: `Henk-Jan is a software engineer and architect, currently working as a Staff 
     Software Engineer at Alliander where he's focused on improving digital resilience across 
