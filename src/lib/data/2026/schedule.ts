@@ -269,11 +269,11 @@ dropping old constraints`,
     trackType: "single",
     title: "Ready, Set, Publish! Write your first Python Package with uv",
     description: `Packaging often feels like a mysterious art form - everyone talks about packages, 
-    but very few people have actually built one from scratch. In this 90‑minute workshop, we will 
+    but very few people have actually built one from scratch. In this 80-minute workshop, we will 
     walk through the whole process together: creating a small package, managing dependencies with 
     uv, building it and publishing it so it can be reused in another project.
 
-Instead of copy‑pasting scripts and hoping all the right dependencies magically appear in your new 
+Instead of copy-pasting scripts and hoping all the right dependencies magically appear in your new 
 environment, let's create a reusable package.
 
 Packaging isn't complicated - you just need a good starting point. You'll leave with a small, 
