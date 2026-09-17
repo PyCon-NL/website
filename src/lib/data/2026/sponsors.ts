@@ -22,7 +22,7 @@ export const sponsors: Sponsor[] = [
     {
         tier: "gold",
         name: "DuckLabs",
-        logo: "/sponsors/ducklabs.png",
+        logo: "/sponsors/DuckLabs.png",
         url: "https://ducklabs.com/",
     },
     {
