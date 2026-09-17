@@ -145,11 +145,12 @@ community. I love connecting with people, sharing knowledge, and contributing ba
     name: "Yuvraj Singh Pathania",
     position: "Software Engineer",
     company: "RSM",
-    bio: `Yuvraj is a product-first backend and AI engineer and a Master's student in Computer 
-    Science at TU Delft. He currently works part-time as an AI consultant at RSM and has spent 
-    the past three years building backend systems and distributed infrastructure, from Kafka 
-    pipelines to the occasional cron job that absolutely refuses to cooperate. Outside engineering, 
-    he DJs under the name Patty Jr, preferably while waiting for said cron job to finish.`,
+    bio: `Yuvraj is a product-first backend and AI engineer, currently working part-time as an 
+    AI consultant while pursuing a Master’s in Computer Science at TU Delft. Before returning to 
+    academia, he worked at the intersection of AI, software, and data engineering, building 
+    scalable, fault-tolerant agentic pipelines and exploring AI applications in cybersecurity. 
+    He has also built backend systems from scratch for multiple early-stage startups. Outside of 
+    engineering, he DJs under the name Patty Jr, usually while waiting for a cron job to finish.`,
     image: "/speakers/yuvraj.jpeg",
     years: [2026],
   },
