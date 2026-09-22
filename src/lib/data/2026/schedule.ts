@@ -357,17 +357,17 @@ applications.`,
     trackType: "single",
     title: "Everyone Hates Monorepos (Until They Don't): Building a Solid Python Monorepo with uv",
     description: `Monorepos are one of those topics that makes engineers very opinionated, very 
-    fast. Google does it. Amazon doesn't. Your last team swore by them. Your current team swears 
-    at them. So who's right?
+    fast. The big tech companies supposedly all do it, except the ones that supposedly don't. Your 
+    last team swore by them. Your current team swears at them. So who's right?
 
-This workshop starts with the controversy, because it's a real one. We'll trace how monorepos 
-evolved, and what the actual tradeoffs are when you're a team of two versus a team of 20. No 
-dogma, just honest tradeoffs.
+This workshop starts with the controversy, because it's a real one. We'll trace how we got from one 
+giant repo, to a thousand tiny ones scattered across the galaxy, and back again. Plus what this 
+actually costs you as a team of two versus a team of twenty.
 
 Then we get to work.
 
 Because the inconvenient truth about monorepos in Python is that they were genuinely painful 
-to manage — until recently. Multiple virtual environments drifting apart, dependency conflicts 
+to manage, until recently. Multiple virtual environments drifting apart, dependency conflicts 
 you only discovered in production, Docker builds that copied half your codebase into the image. 
 The tooling just wasn't there.
 

@@ -125,8 +125,8 @@ community. I love connecting with people, sharing knowledge, and contributing ba
     engineering turned Pythonista, he spent years building data and ML systems for a living, with a 
     focus on MLOps and making these systems practical and usable. He also tinkered with GenAI models 
     before the name caught on, playing with NLP long before the ChatGPT release (but definitely more 
-    since). Throughout the years, he created databooks, an open source tool for keeping data science 
-    notebooks clean and reviewable, more recently pytest-agent-eval for LLM agent testing. He enjoys 
+    since). Throughout the years, he created **databooks**, an open source tool for keeping data science 
+    notebooks clean and reviewable, more recently **pytest-agent-eval** for LLM agent testing. He enjoys 
     digging into Python performance and how it plays with other languages (such as Rust, mojo, mypyc and 
     pypy). He co-hosts the Bright Signal and DataTopics podcasts and is one of the organizers of the 
     Python User Group Belgium and PyData Belgium meetup groups. He has spoken at several PyCon events, 
