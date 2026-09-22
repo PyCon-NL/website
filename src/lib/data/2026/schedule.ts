@@ -129,21 +129,21 @@ to a specific monitoring vendor.`,
   {
     type: "talk",
     trackType: "single",
-    title: "TBD", // "Testing LLM agents with Pytest",
-    description: "TDB",
-//     `Normal pytest tests assume a few things: same input gives same output, 
-//     there's one right answer, and it costs nothing to run. Add LLM agents to the mix and 
-//     your assumptions go out the window. LLMs are probabilistic, and for closed models you 
-//     can never guarantee the same output.
+    title: "Testing LLM agents with Pytest",
+    description:
+    `Normal pytest tests assume a few things: same input gives same output, 
+    there's one right answer, and it costs nothing to run. Add LLM agents to the mix and 
+    your assumptions go out the window. LLMs are probabilistic, and for closed models you 
+    can never guarantee the same output.
 
-// In this talk, I'll walk through my journey on building (with) LLMs, the need for tests, a 
-// framework that was built from these needs, and the features of the 
-// [Pytest plugin](https://datarootsio.github.io/pytest-agent-eval/main/) that came from it 
-// for testing LLM agents: aggregate runs, the different kind of checks, among other things. 
-// We'll start on "what is a test" all the way to what's the industry standard for LLM testing, 
-// and how we can make it practical with Pytest and CI runs.`,
+In this talk, I'll walk through my journey on building (with) LLMs, the need for tests, a 
+framework that was built from these needs, and the features of the 
+[Pytest plugin](https://datarootsio.github.io/pytest-agent-eval/main/) that came from it 
+for testing LLM agents: aggregate runs, the different kind of checks, among other things. 
+We'll start on "what is a test" all the way to what's the industry standard for LLM testing, 
+and how we can make it practical with Pytest and CI runs.`,
     room: "Spark",
-    speakerId: -1, // 25,
+    speakerId: 21,
     timeSlot: "11:25",
     year: 2026,
     id: 6,
@@ -151,21 +151,10 @@ to a specific monitoring vendor.`,
   {
     type: "talk",
     trackType: "single",
-    title: "Python Polars for Practitioners: When to Drop Pandas",
-    description: `Pandas works until you hit memory limits, slow joins, or null coercion 
-    bugs. Polars fixes most of these by design: columnar memory layout, strict types, lazy 
-    evaluation, and real parallelism. 
-
-We will start with familiar Pandas style analytics tasks, then showcase selected parts using 
-Polars to show where lazy execution, query optimization, and memory-efficient execution 
-become useful. The focus is not on replacing Pandas everywhere, but on recognizing the point 
-where Polars gives clearer, faster, or more maintainable workflows. 
-
-From there, we look at sandboxed execution: running Polars in an isolated environment to 
-safely execute dynamically generated transformation code that can also be used as a tool 
-for those building in Agents for Data Analytics and Visualization Agentic workflow.`,
+    title: "tbd",
+    description: "tbd",
     room: "Polars",
-    speakerId: 21,
+    speakerId: -1,
     timeSlot: "12:05",
     year: 2026,
     id: 7,
@@ -368,17 +357,17 @@ applications.`,
     trackType: "single",
     title: "Everyone Hates Monorepos (Until They Don't): Building a Solid Python Monorepo with uv",
     description: `Monorepos are one of those topics that makes engineers very opinionated, very 
-    fast. Google does it. Amazon doesn't. Your last team swore by them. Your current team swears 
-    at them. So who's right?
+    fast. The big tech companies supposedly all do it, except the ones that supposedly don't. Your 
+    last team swore by them. Your current team swears at them. So who's right?
 
-This workshop starts with the controversy, because it's a real one. We'll trace how monorepos 
-evolved, and what the actual tradeoffs are when you're a team of two versus a team of 20. No 
-dogma, just honest tradeoffs.
+This workshop starts with the controversy, because it's a real one. We'll trace how we got from one 
+giant repo, to a thousand tiny ones scattered across the galaxy, and back again. Plus what this 
+actually costs you as a team of two versus a team of twenty.
 
 Then we get to work.
 
 Because the inconvenient truth about monorepos in Python is that they were genuinely painful 
-to manage — until recently. Multiple virtual environments drifting apart, dependency conflicts 
+to manage, until recently. Multiple virtual environments drifting apart, dependency conflicts 
 you only discovered in production, Docker builds that copied half your codebase into the image. 
 The tooling just wasn't there.
 

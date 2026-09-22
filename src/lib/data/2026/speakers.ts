@@ -31,7 +31,7 @@ export const speakers: Speaker[] = [
     company: "Manychat",
     bio: `Daria Korsakova is a Python Engineer at Manychat, 
     
-where she builds backend systems for Brands, one of the company’s newest products, and
+where she builds backend systems for Brands, one of the company's newest products, and
 leads the observability effort from the ground up. Her work focuses on production 
 reliability, monitoring, and designing systems that make it easier to understand what
 is happening when things go wrong. She is particularly interested in turning real 
@@ -78,7 +78,7 @@ community. I love connecting with people, sharing knowledge, and contributing ba
     company: "Sopra Steria",
     bio: `Derviş traded load-bearing structures for load-bearing Python scripts nearly a decade 
     ago and never looked back. As an engineer at Sopra Steria he works on projects 
-    for TenneT, helping build the infrastructure for the energy transition — which, if you ask 
+    for TenneT, helping build the infrastructure for the energy transition. Which, if you ask 
     him, is a pretty exciting place to write Python for a living. In his own time he's turning a 
     pizza discovery and ranking platform into a production monorepo. You'll likely learn more about
     his pizza obsession at PyCon NL.`,
@@ -118,14 +118,20 @@ community. I love connecting with people, sharing knowledge, and contributing ba
   },
   {
     id: 21,
-    name: "Tarun Jain",
-    position: "AI Research",
-    company: "Kaivid Labs",
-    bio: `Tarun Jain is a Founding Engineer at Kaivid Labs, a Google Developer Expert in AI, 
-    and a Qdrant Distinguished Ambassador. Tarun has contributed to Google Summer of Code 2024 
-    at Red Hen Lab and Google Summer of Code 2023 at caMicroscope. He also creates content on 
-    his YouTube channel, AI with Tarun.`,
-    image: "/speakers/tarun_jain.png",
+    name: "Murilo Cunha",
+    position: "CTO",
+    company: "Dataroots",
+    bio: `Murilo Cunha is CTO at Dataroots, a data and AI consultancy in Belgium. A machine learning 
+    engineering turned Pythonista, he spent years building data and ML systems for a living, with a 
+    focus on MLOps and making these systems practical and usable. He also tinkered with GenAI models 
+    before the name caught on, playing with NLP long before the ChatGPT release (but definitely more 
+    since). Throughout the years, he created **databooks**, an open source tool for keeping data science 
+    notebooks clean and reviewable, more recently **pytest-agent-eval** for LLM agent testing. He enjoys 
+    digging into Python performance and how it plays with other languages (such as Rust, mojo, mypyc and 
+    pypy). He co-hosts the Bright Signal and DataTopics podcasts and is one of the organizers of the 
+    Python User Group Belgium and PyData Belgium meetup groups. He has spoken at several PyCon events, 
+    mostly because he likes chat with passionate people about tech over coffee.`,
+    image: "/speakers/murilo_cunha.png",
     years: [2026],
   },
   {
@@ -135,7 +141,7 @@ community. I love connecting with people, sharing knowledge, and contributing ba
     company: "Alliander",
     bio: `Henk-Jan is a software engineer and architect, currently working as a Staff 
     Software Engineer at Alliander where he's focused on improving digital resilience across 
-    the organization. When he’s not behind a keyboard, he occasionally remembers to touch grass, 
+    the organization. When he's not behind a keyboard, he occasionally remembers to touch grass, 
     usually while training for an ultra trail event, which seemed like a good idea at the time.`,
     image: "/speakers/henk-jan.png",
     years: [2026],
@@ -146,7 +152,7 @@ community. I love connecting with people, sharing knowledge, and contributing ba
     position: "Software Engineer",
     company: "RSM",
     bio: `Yuvraj is a product-first backend and AI engineer, currently working part-time as an 
-    AI consultant while pursuing a Master’s in Computer Science at TU Delft. Before returning to 
+    AI consultant while pursuing a Master's in Computer Science at TU Delft. Before returning to 
     academia, he worked at the intersection of AI, software, and data engineering, building 
     scalable, fault-tolerant agentic pipelines and exploring AI applications in cybersecurity. 
     He has also built backend systems from scratch for multiple early-stage startups. Outside of 
