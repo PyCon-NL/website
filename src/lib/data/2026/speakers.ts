@@ -137,7 +137,7 @@ community. I love connecting with people, sharing knowledge, and contributing ba
   {
     id: 22,
     name: "Henk-Jan van Hasselaar",
-    position: "Software Engineer",
+    position: "Staff Software Engineer",
     company: "Alliander",
     bio: `Henk-Jan is a software engineer and architect, currently working as a Staff 
     Software Engineer at Alliander where he's focused on improving digital resilience across 
@@ -164,10 +164,11 @@ community. I love connecting with people, sharing knowledge, and contributing ba
     id: 24,
     name: "Taras Kozlov",
     position: "Software Developer",
-    bio: `Taras is a software developer with a background in C++ who now works mostly with Python. 
-    I am especially interested in performance, low-latency systems, and understanding what happens 
-    beneath high-level abstractions. I am the author of the open-source Python packages picows and 
-    aiofastnet, which focus on high-performance asynchronous networking.`,
+    bio: `Taras Kozlov is a software developer with around 20 years of experience and a background 
+    in C++, now working primarily with Python. In recent years, his work has focused on algorithmic 
+    trading, with a particular interest in performance, low-latency systems, and asynchronous 
+    networking. He is also the author of the open-source Python packages picows and aiofastnet, 
+    both focused on high-performance asynchronous networking.`,
     image: "/speakers/taras_kozlov.jpeg",
     years: [2026],
   },
