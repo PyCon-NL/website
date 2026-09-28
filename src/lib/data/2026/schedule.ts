@@ -19,7 +19,7 @@ export const schedule: Schedule<2026> = [
     title: "Keynote - TBA",
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, ...`,
     room: "Polars",
-    speakerId: 25,
+    speakerId: -1,
     timeSlot: "09:45",
     year: 2026,
     id: 1,
@@ -429,8 +429,11 @@ Python assumed.`,
   {
     type: "talk",
     trackType: "common",
-    title: "Keynote - TBA",
-    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, ...`,
+    title: "Keynote - Sustaining Open Source for the Future",
+    description: `Through a true story, this talk explores what it takes to build a better 
+    and more sustainable future for open source. It looks at how communities, companies, 
+    foundations and governments can share responsibility, support contributors and help new 
+    leaders grow.`,
     room: "Polars",
     speakerId: 26,
     timeSlot: "16:10",

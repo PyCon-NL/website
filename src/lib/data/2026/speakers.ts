@@ -172,22 +172,26 @@ community. I love connecting with people, sharing knowledge, and contributing ba
     image: "/speakers/taras_kozlov.jpeg",
     years: [2026],
   },
-  {
-    id: 25,
-    name: "Marcelo Trylesinski",
-    position: "Software Engineer",
-    company: "Pydantic",
-    bio: "tba",
-    image: "/speakers/marcelo_trylesinski.jpeg",
-    years: [2026],
-  },
+  // {
+  //   id: 25,
+  //   name: "Marcelo Trylesinski",
+  //   position: "Software Engineer",
+  //   company: "Pydantic",
+  //   bio: "tba",
+  //   image: "/speakers/marcelo_trylesinski.jpeg",
+  //   years: [2026],
+  // },
   {
     id: 26,
     name: "Georgi Ker",
-    position: "Software Engineer",
-    company: "tba",
-    bio: "tba",
-    image: "/speakers/georgi_ker.jpeg",
+    position: "Director of the Python Software Foundation",
+    bio: `Georgi Ker serves as the director of the Python Software Foundation and Chair of the PSF 
+    Diversity & Inclusion Workgroup. A PSF Fellow and Community Service Award recipient, she helps 
+    build and support open source communities including PyLadies, PyLadiesCon, Python Asia, PyPodCats, 
+    PyCon Thailand, Ruby Tuesday, and RubyConf Thailand. 
+She is also one of the Sovereign Tech Agency fellows developing Open Community Leadership (OCL), an 
+open source initiative that turns community knowledge into practical frameworks, tools, and learning resources.`,
+    image: "/speakers/georgi-ker.jpg",
     years: [2026],
   },
   {
@@ -201,7 +205,7 @@ community. I love connecting with people, sharing knowledge, and contributing ba
     At TU Clausthal he collaborated on benchmarking LLM capabilities in Building 
     Information Modelling (arXiv:2511.05533), and earlier work at Ostfalia went into 
     a toolchain for automatically generating digital environments for autonomous driving.`,
-    image: "/speakers/sergio_peral.jpeg",
+    image: "/speakers/sergio-peral.png",
     years: [2026],
   }
 ];
