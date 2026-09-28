@@ -19,7 +19,7 @@ export const schedule: Schedule<2026> = [
     title: "Keynote - TBA",
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, ...`,
     room: "Polars",
-    speakerId: -1,
+    speakerId: 25,
     timeSlot: "09:45",
     year: 2026,
     id: 1,
