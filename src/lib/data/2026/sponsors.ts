@@ -28,7 +28,7 @@ export const sponsors: Sponsor[] = [
     {
         tier: "silver",
         name: "Leukeleu",
-        logo: "/sponsors/leukeleu-purple.svg",
+        logo: "/sponsors/leukeleu.png",
         url: "https://www.leukeleu.nl/en/",
     },
     {
