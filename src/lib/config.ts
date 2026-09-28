@@ -19,7 +19,7 @@ export const CONTACT_EMAIL = 'info@pycon-nl.org';
 
 // Call for papers and volunteers visibility (hides the item from the nav entirely)
 export const HIDE_CALL_FOR_PAPERS = true;
-export const HIDE_CALL_FOR_VOLUNTEERS = false;
+export const HIDE_CALL_FOR_VOLUNTEERS = true;
 export const HIDE_CALL_FOR_SPONSORS = true;
 export const HIDE_SPEAKERS_CTA = true;
 export const HIDE_SCHEDULE_CTA = true;
@@ -30,7 +30,7 @@ export const HIDE_SCHEDULE_CTA = true;
 //   "closed"      -> the after-deadline page
 export type CallStatus = "coming-soon" | "open" | "closed";
 export const CALL_FOR_PAPERS_STATUS: CallStatus = "closed";
-export const CALL_FOR_VOLUNTEERS_STATUS: CallStatus = "open";
+export const CALL_FOR_VOLUNTEERS_STATUS: CallStatus = "closed";
 
 // Sponsor pricing information
 export const PLATINUM_PRICE = "€9,000.00";
