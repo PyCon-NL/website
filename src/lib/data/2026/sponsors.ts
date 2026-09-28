@@ -26,6 +26,12 @@ export const sponsors: Sponsor[] = [
         url: "https://ducklabs.com/",
     },
     {
+        tier: "silver",
+        name: "Leukeleu",
+        logo: "/sponsors/leukeleu-purple.svg",
+        url: "https://www.leukeleu.nl/en/",
+    },
+    {
         tier: "bronze",
         name: "Channable",
         logo: "/sponsors/channable_horizontal.png",

@@ -71,13 +71,27 @@ challenges, and what I've tried to combat them.`,
   {
     type: "talk",
     trackType: "single",
-    title: "Practical Software Architecture for Python Developers",
-    description: `In this talk, we'll dive into common software architecture jargon, explore 
-    the challenges we face as Python software engineers, and showcase frequent pitfalls using 
-    easy-to-understand code examples along with practical ways to avoid them. I'll wrap up by 
-    sharing my take on a minimum viable software architecture for real-world Python projects.`,
+    title: "3D Data Science with Python",
+    description: `3D used to mean C++; it doesn't anymore.
+
+This talk is about how that ecosystem actually fits together, using one running example: a
+raw LiDAR scan of a street, turned into labelled objects (ground, buildings, vegetation,
+street furniture) using Python.
+
+We'll cover:
+
+- The map of the ecosystem, and how to pick: Open3D, PyVista, trimesh, laspy, SciPy's 
+KDTree, PyTorch3D. What each is for, and which combinations are worth the trouble.
+
+- The performance cliff. These libraries are thin bindings over C++ kernels, so one Python-level 
+for loop over your points can cost you two orders of magnitude. Where the boundary sits, and how to stay on the right side of it.
+
+- How to fit millions of points into finite RAM (chunked reads, and downsampling,etc)
+
+You'll leave with a mental model of the 3D Python stack, a working end-to-end pipeline to 
+copy, and the specific gotchas that cost me weeks.`,
     room: "Spark",
-    speakerId: 22,
+    speakerId: 27,
     timeSlot: "10:45",
     year: 2026,
     id: 3,
@@ -151,10 +165,13 @@ and how we can make it practical with Pytest and CI runs.`,
   {
     type: "talk",
     trackType: "single",
-    title: "tbd",
-    description: "tbd",
+    title: "Practical Software Architecture for Python Developers",
+    description: `In this talk, we'll dive into common software architecture jargon, explore 
+    the challenges we face as Python software engineers, and showcase frequent pitfalls using 
+    easy-to-understand code examples along with practical ways to avoid them. I'll wrap up by 
+    sharing my take on a minimum viable software architecture for real-world Python projects.`,
     room: "Polars",
-    speakerId: -1,
+    speakerId: 22,
     timeSlot: "12:05",
     year: 2026,
     id: 7,
@@ -271,7 +288,7 @@ working example you can reuse for your future projects.
 Target audience: Intermediate Python users. No packaging experience needed - curiosity is enough!
 
 ### Requirements:
-- Any Python‑friendly IDE (VS Code, Cursor, PyCharm, etc.)
+- Any Python-friendly IDE (VS Code, Cursor, PyCharm, etc.)
 - Basic comfort with the command line
 - Basic understanding of Python environments`,
     room: "Spark",
@@ -412,10 +429,13 @@ Python assumed.`,
   {
     type: "talk",
     trackType: "common",
-    title: "Keynote - TBA",
-    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, ...`,
+    title: "Keynote - Sustaining Open Source for the Future",
+    description: `Through a true story, this talk explores what it takes to build a better 
+    and more sustainable future for open source. It looks at how communities, companies, 
+    foundations and governments can share responsibility, support contributors and help new 
+    leaders grow.`,
     room: "Polars",
-    speakerId: -1,
+    speakerId: 26,
     timeSlot: "16:10",
     year: 2026,
     id: 17,

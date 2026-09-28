@@ -174,21 +174,38 @@ community. I love connecting with people, sharing knowledge, and contributing ba
   },
   // {
   //   id: 25,
-  //   name: "Murilo",
-  //   position: "Machine Learning Engineer",
-  //   company: "Dataroots",
-  //   bio: `Murilo Cunha is CTO at Dataroots, a data and AI consultancy in Belgium. A machine 
-  //   learning engineering turned Pythonista, he spent years building data and ML systems for a 
-  //   living, with a focus on MLOps and making these systems practical and usable. He also tinkered 
-  //   with GenAI models before the name caught on, playing with NLP long before the ChatGPT release 
-  //   (but definitely more since). Throughout the years, he created databooks, an open source tool 
-  //   for keeping data science notebooks clean and reviewable, more recently pytest-agent-eval 
-  //   for LLM agent testing. He enjoys digging into Python performance and how it plays with other 
-  //   languages (such as Rust, mojo, mypyc and pypy). He co-hosts the Bright Signal and DataTopics 
-  //   podcasts and is one of the organizers of the Python User Group Belgium and PyData Belgium meetup 
-  //   groups. He has spoken at several PyCon events, mostly because he likes chat with passionate 
-  //   people about tech over coffee.`,
-  //   image: "/speakers/placeholder.jpg",
+  //   name: "Marcelo Trylesinski",
+  //   position: "Software Engineer",
+  //   company: "Pydantic",
+  //   bio: "tba",
+  //   image: "/speakers/marcelo_trylesinski.jpeg",
   //   years: [2026],
-  // }
+  // },
+  {
+    id: 26,
+    name: "Georgi Ker",
+    position: "Director of the Python Software Foundation",
+    bio: `Georgi Ker serves as the director of the Python Software Foundation and Chair of the PSF 
+    Diversity & Inclusion Workgroup. A PSF Fellow and Community Service Award recipient, she helps 
+    build and support open source communities including PyLadies, PyLadiesCon, Python Asia, PyPodCats, 
+    PyCon Thailand, Ruby Tuesday, and RubyConf Thailand. 
+She is also one of the Sovereign Tech Agency fellows developing Open Community Leadership (OCL), an 
+open source initiative that turns community knowledge into practical frameworks, tools, and learning resources.`,
+    image: "/speakers/georgi-ker.jpg",
+    years: [2026],
+  },
+  {
+    id: 27,
+    name: "Sergio Peral",
+    position: "Software Engineer",
+    company: "Teqyard",
+    bio: `Sergio Peral is a Machine Learning Engineer at Teqyard, he has been working in 
+    machine learning since 2023, with a focus on agentic workflows, natural language 
+    processing, and applying large language models to technical domains, such as AEC.
+    At TU Clausthal he collaborated on benchmarking LLM capabilities in Building 
+    Information Modelling (arXiv:2511.05533), and earlier work at Ostfalia went into 
+    a toolchain for automatically generating digital environments for autonomous driving.`,
+    image: "/speakers/sergio-peral.png",
+    years: [2026],
+  }
 ];
