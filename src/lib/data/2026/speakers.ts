@@ -172,15 +172,17 @@ community. I love connecting with people, sharing knowledge, and contributing ba
     image: "/speakers/taras_kozlov.jpeg",
     years: [2026],
   },
-  // {
-  //   id: 25,
-  //   name: "Marcelo Trylesinski",
-  //   position: "Software Engineer",
-  //   company: "Pydantic",
-  //   bio: "tba",
-  //   image: "/speakers/marcelo_trylesinski.jpeg",
-  //   years: [2026],
-  // },
+  {
+    id: 25,
+    name: "Marcelo Trylesinski",
+    position: "Software Engineer",
+    company: "Pydantic",
+    bio: `Marcelo Trylesinski maintains Pydantic AI, Starlette, and Uvicorn, contributing to tools 
+    used throughout the Python ecosystem. He is a software engineer at Pydantic. Born in Brazil, 
+    he now lives in Utrecht.`,
+    image: "/speakers/marcelo-trylesinski.jpeg",
+    years: [2026],
+  },
   {
     id: 26,
     name: "Georgi Ker",
