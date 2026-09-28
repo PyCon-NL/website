@@ -199,15 +199,12 @@ open source initiative that turns community knowledge into practical frameworks,
   {
     id: 27,
     name: "Sergio Peral",
-    position: "Software Engineer",
+    position: "Machine Learning Engineer",
     company: "Teqyard",
-    bio: `Sergio Peral is a Machine Learning Engineer at Teqyard, he has been working in 
-    machine learning since 2023, with a focus on agentic workflows, natural language 
-    processing, and applying large language models to technical domains, such as AEC.
-    At TU Clausthal he collaborated on benchmarking LLM capabilities in Building 
-    Information Modelling (arXiv:2511.05533), and earlier work at Ostfalia went into 
-    a toolchain for automatically generating digital environments for autonomous driving.`,
-    image: "/speakers/sergio-peral.png",
+    bio: `Sergio is a Machine Learning Engineer at Teqyard working on very unrelated but interesting 
+    projects such us some object recognition from point clouds. His history with Python started 8 years 
+    ago with a 100 days of Code course and at that moment he felt in love with it.`,
+    image: "/speakers/Sergio.jpg",
     years: [2026],
   }
 ];
