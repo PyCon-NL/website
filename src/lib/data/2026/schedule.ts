@@ -16,8 +16,19 @@ export const schedule: Schedule<2026> = [
   {
     type: "talk",
     trackType: "common",
-    title: "Keynote - TBA",
-    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, ...`,
+    title: "Keynote - Believe in Routes",
+    description: `How do you move toward your potential when the main route is closed?
+
+Marcelo Trylesinski's path runs from losing a semester to gaming to maintaining Uvicorn,
+Starlette, Pydantic AI, Logfire and the MCP Python SDK — tools that a large part of the
+Python ecosystem quietly depends on. In this keynote he reflects on what got him from one
+to the other: curiosity with direction, organisation, and the slow work of growing
+professionally and personally at the same time.
+
+At a moment when a lot of people feel anxious about AI and uncertain about where their
+careers are heading, Marcelo makes the case for small consistent steps. For maintenance
+as a form of care. And for the idea that focusing on the next actionable step is enough
+to build a meaningful career, and a meaningful life.`,
     room: "Polars",
     speakerId: 25,
     timeSlot: "09:45",
