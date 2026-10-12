@@ -46,7 +46,7 @@ this talk at EuroPython 2026`,
   {
     id: 3,
     name: "Thiago Bellini Ribeiro",
-    position: "Senior Software Engineer",
+    position: "Staff Engineer",
     company: "Sendcloud",
     bio: `My name is Thiago Bellini Ribeiro, a 38 year-old Brazilian 🇧🇷 software engineer 
 living and working in the Netherlands 🇳🇱 at Sendcloud, with my wife, two dogs 🐶, and two cats 😸.
