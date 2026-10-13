@@ -111,7 +111,35 @@ copy, and the specific gotchas that cost me weeks.`,
     type: "talk",
     trackType: "single",
     title: "PyLadies Community Event",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, ...",
+    description: `Let's explore the world of Free Open Source Software (FOSS) and how to contribute to it!
+
+Meet the PyLadies Amsterdam core team and join the OSS Sprint and/or try out their workshops.
+This event is for you: Python software engineer, Python enthusiast, data engineer, MLOps
+engineer, machine learning engineer, AI engineer, data scientist, data analyst.
+
+It's no secret that FOSS makes the world go round. Every company and every individual relies
+on it in some way or another. And holding up the global economy is not easy! It all depends
+on creative contributors like yourself.
+
+Whether you want to make your CV stand out as a FOSS contributor, gain new skills, find meaning
+in giving back to the community or simply help others build a cool 😎 solution, PyLadies has
+got your back!
+
+Together we'll look at how to find problems that interest you and how to take a stab at them.
+Skill level? No worries! Most projects need documentation writers just as urgently as they
+need bugfixers or amazing new features. And many have specially curated beginner issues!
+
+Join PyLadies Amsterdam at PyCon NL to learn:
+
+- why FOSS matters
+- how to find issues to solve
+- how to communicate with other contributors
+
+And who knows, maybe you'll be making your very first contribution!
+
+The OSS Sprint runs from 10:45 to 12:35 in the Flash room. Outside the sprint, you can meet
+PyLadies Amsterdam and join their workshops at the Community booth (S1-S2) from 09:30 to 10:45
+and from 12:35 to 17:05.`,
     room: "Flash",
     speakerId: -1,
     timeSlot: "10:45",
@@ -313,7 +341,32 @@ Target audience: Intermediate Python users. No packaging experience needed - cur
     type: "talk",
     trackType: "single",
     title: "Community Organizers sprint - Part 1",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, ...",
+    description: `This is the first half of the session; it continues in Part 2 after the break.
+
+What actually makes a Python community thrive?
+
+Running a community is about much more than organizing events. How do we find great speakers?
+Grow participation? Recruit volunteers? Keep organizers motivated? Find sponsorship? Build an
+inclusive culture? And perhaps most importantly: how do we make sure our community can thrive
+without depending on one or two people?
+
+Join Gareth Thomas for a 2-hour interactive session for Python community organizers and leaders
+from across the Netherlands. We'll share experiences, discuss the challenges we're facing, and,
+most importantly, learn from each other.
+
+💬 We'll talk about:
+
+- Growing participation
+- Finding and supporting speakers
+- Volunteers & organizer burnout
+- Sponsorship & funding
+- Inclusion & community culture
+- Keeping communities healthy and sustainable
+
+No slides full of "10 secrets to successful communities." 😄 You are the experts. Let's put that
+experience in the room.
+
+Different communities. Same Python. Stronger together.`,
     room: "Flash",
     speakerId: -1,
     timeSlot: "13:30",
@@ -423,7 +476,32 @@ Python assumed.`,
     type: "talk",
     trackType: "single",
     title: "Community Organizers sprint - Part 2",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, ...",
+    description: `This is the second half of the session that started in Part 1.
+
+What actually makes a Python community thrive?
+
+Running a community is about much more than organizing events. How do we find great speakers?
+Grow participation? Recruit volunteers? Keep organizers motivated? Find sponsorship? Build an
+inclusive culture? And perhaps most importantly: how do we make sure our community can thrive
+without depending on one or two people?
+
+Join Gareth Thomas for a 2-hour interactive session for Python community organizers and leaders
+from across the Netherlands. We'll share experiences, discuss the challenges we're facing, and,
+most importantly, learn from each other.
+
+💬 We'll talk about:
+
+- Growing participation
+- Finding and supporting speakers
+- Volunteers & organizer burnout
+- Sponsorship & funding
+- Inclusion & community culture
+- Keeping communities healthy and sustainable
+
+No slides full of "10 secrets to successful communities." 😄 You are the experts. Let's put that
+experience in the room.
+
+Different communities. Same Python. Stronger together.`,
     room: "Flash",
     speakerId: -1,
     timeSlot: "14:50",
