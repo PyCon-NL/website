@@ -368,7 +368,7 @@ experience in the room.
 
 Different communities. Same Python. Stronger together.`,
     room: "Flash",
-    speakerId: -1,
+    speakerId: 28,
     timeSlot: "13:30",
     year: 2026,
     id: 12,
@@ -503,7 +503,7 @@ experience in the room.
 
 Different communities. Same Python. Stronger together.`,
     room: "Flash",
-    speakerId: -1,
+    speakerId: 28,
     timeSlot: "14:50",
     year: 2026,
     id: 16,
