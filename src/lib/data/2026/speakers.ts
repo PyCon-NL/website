@@ -206,5 +206,17 @@ open source initiative that turns community knowledge into practical frameworks,
     ago with a 100 days of Code course and at that moment he felt in love with it.`,
     image: "/speakers/Sergio.jpg",
     years: [2026],
+  },
+  {
+    id: 28,
+    name: "Gareth Thomas",
+    position: "Chair of PyData Eindhoven, Python Advocate and Entrepreneur, Community Builder and Podcaster",
+    company: "CGI",
+    bio: `Embracing Change is my motto — I love adjusting to new technologies and leveraging the right tools for the right job. 
+    I'm a consultant, technologist, and founder based in Eindhoven, Netherlands. 
+    Over 20 years I've moved from control-theory engineering at MathWorks to co-founding and running software businesses, 
+    to consulting delivery at CGI — while chairing PyData Eindhoven's community for six years and hosting the Inspiring Computing podcast.`,
+    image: "/speakers/gareth.png",
+    years: [2026],
   }
 ];
