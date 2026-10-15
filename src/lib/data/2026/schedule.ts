@@ -110,7 +110,7 @@ copy, and the specific gotchas that cost me weeks.`,
   {
     type: "talk",
     trackType: "single",
-    title: "PyLadies Community Event",
+    title: "OSS Sprint",
     description: `Let's explore the world of Free Open Source Software (FOSS) and how to contribute to it!
 
 Meet the PyLadies Amsterdam core team and join the OSS Sprint and/or try out their workshops.
