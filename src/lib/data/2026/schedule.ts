@@ -141,7 +141,7 @@ The OSS Sprint runs from 10:45 to 12:35 in the Flash room. Outside the sprint, y
 PyLadies Amsterdam and join their workshops at the Community booth (S1-S2) from 09:30 to 10:45
 and from 12:35 to 17:05.`,
     room: "Flash",
-    speakerId: -1,
+    speakerId: 29,
     timeSlot: "10:45",
     year: 2026,
     id: 4,

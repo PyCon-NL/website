@@ -218,5 +218,13 @@ open source initiative that turns community knowledge into practical frameworks,
     to consulting delivery at CGI — while chairing PyData Eindhoven's community for six years and hosting the Inspiring Computing podcast.`,
     image: "/speakers/gareth.png",
     years: [2026],
+  },
+  {
+    id: 29,
+    name: "Giulia Caglia and Una Galyeva",
+    position: "PyLadies Amsterdam",
+    company: "PyLadies Amsterdam",
+    bio: "",
+    years: [2026],
   }
 ];
